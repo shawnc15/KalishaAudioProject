@@ -16,10 +16,11 @@ public class Horrorhound : MonoBehaviour {
     private Vector3 end;
     private Transform[] path;
     public GameObject[] pathObjects;
+    private GameObject g_player;
 
-	// Use this for initialization
-	void Start () {
-
+    // Use this for initialization
+    void Start () {
+        g_player = GameObject.Find("Player");
         path = new Transform[pathObjects.GetLength(0)];
         for (int i = 0; i < pathObjects.GetLength(0); i++)
         {
@@ -73,8 +74,29 @@ public class Horrorhound : MonoBehaviour {
         {
             velocity = maxSpeed * direction;
         }
-        Debug.Log(velocity);
+        //Debug.Log(velocity);
         position += velocity;
         //Debug.Log(position);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("COLLIDINGGGGG");
+        if (collision.gameObject.tag == "player")
+        {
+
+            g_player.transform.position = new Vector3(0.0f, 0.0f, this.transform.position.z);
+            this.gameObject.SetActive(false);
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("COLLIDINGGGGG");
+        if (collision.gameObject.tag == "player")
+        {
+
+            g_player.transform.position = new Vector3(0.0f, 0.0f, this.transform.position.z);
+            this.gameObject.SetActive(false);
+        }
     }
 }
