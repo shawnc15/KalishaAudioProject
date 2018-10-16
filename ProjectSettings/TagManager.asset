@@ -4,8 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - player
   - path
+  - shard
+  - barrier
   layers:
   - Default
   - TransparentFX
