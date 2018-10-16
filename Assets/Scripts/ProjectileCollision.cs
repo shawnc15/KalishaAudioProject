@@ -14,7 +14,7 @@ public class ProjectileCollision : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		// WHAT
 	}
 
     private void OnCollisionEnter2D(Collision2D collision)
