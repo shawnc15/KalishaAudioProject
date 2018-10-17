@@ -125,3 +125,4 @@ MonoBehaviour:
     type: 2}
   interval: 100
   direction: left
+  speed: 5

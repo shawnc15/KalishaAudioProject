@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Horrorhound : MonoBehaviour {
 
@@ -10,13 +12,14 @@ public class Horrorhound : MonoBehaviour {
     private Vector3 velocity;
     private Vector3 acceleration;
     private float accelRate;
-    private float maxSpeed;
+    public float maxSpeed;
     private Vector3 direction;
     private Vector3 start;
     private Vector3 end;
     private Transform[] path;
     public GameObject[] pathObjects;
     private GameObject g_player;
+    private Scene loadedLevel;
 
     // Use this for initialization
     void Start () {
@@ -32,10 +35,12 @@ public class Horrorhound : MonoBehaviour {
         end = path[1].position;
         accelRate = 0.05f;
         position = transform.position;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        loadedLevel = SceneManager.GetActiveScene();
+
+    }
+
+    // Update is called once per frame
+    void Update () {
         Move();
         CheckPosition();
         direction = (end - position).normalized;
@@ -81,22 +86,14 @@ public class Horrorhound : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("COLLIDINGGGGG");
         if (collision.gameObject.tag == "player")
         {
 
-            g_player.transform.position = new Vector3(0.0f, 0.0f, this.transform.position.z);
-            this.gameObject.SetActive(false);
-        }
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("COLLIDINGGGGG");
-        if (collision.gameObject.tag == "player")
-        {
+           // g_player.transform.position = new Vector3(0.0f, 0.0f, this.transform.position.z);
+            //this.gameObject.SetActive(false);
+            SceneManager.LoadScene(loadedLevel.buildIndex);
 
-            g_player.transform.position = new Vector3(0.0f, 0.0f, this.transform.position.z);
-            this.gameObject.SetActive(false);
         }
     }
+
 }
