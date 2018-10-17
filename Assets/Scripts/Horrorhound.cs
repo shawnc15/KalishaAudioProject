@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Horrorhound : MonoBehaviour {
 
@@ -10,13 +12,14 @@ public class Horrorhound : MonoBehaviour {
     private Vector3 velocity;
     private Vector3 acceleration;
     private float accelRate;
-    private float maxSpeed;
+    public float maxSpeed;
     private Vector3 direction;
     private Vector3 start;
     private Vector3 end;
     private Transform[] path;
     public GameObject[] pathObjects;
-    private GameObject g_player;
+    private Scene loadedLevel;
+    public GameObject g_player;
 
     // Use this for initialization
     void Start () {
@@ -26,16 +29,17 @@ public class Horrorhound : MonoBehaviour {
         {
             path[i] = pathObjects[i].transform;
         }
-        maxSpeed = 0.1f;
         step = 0;
         start = path[0].position;
         end = path[1].position;
-        accelRate = 0.05f;
+        accelRate = maxSpeed * 10.0f;
         position = transform.position;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        loadedLevel = SceneManager.GetActiveScene();
+
+    }
+
+    // Update is called once per frame
+    void Update () {
         Move();
         CheckPosition();
         direction = (end - position).normalized;
@@ -58,7 +62,7 @@ public class Horrorhound : MonoBehaviour {
     {
         float distance = (end - transform.position).magnitude;
         
-        if (distance <= 0.1f)
+        if (distance <= 0.2f)
         {
             //Debug.Log("Next");
             NextStep();
@@ -67,7 +71,7 @@ public class Horrorhound : MonoBehaviour {
 
     void Move()
     {
-        acceleration = accelRate * direction;
+        acceleration = accelRate * direction *Time.deltaTime;
         velocity += acceleration;
         //Debug.Log(velocity.magnitude);
         if (velocity.magnitude > maxSpeed)
@@ -81,22 +85,14 @@ public class Horrorhound : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("COLLIDINGGGGG");
         if (collision.gameObject.tag == "player")
         {
 
-            g_player.transform.position = new Vector3(0.0f, 0.0f, this.transform.position.z);
-            this.gameObject.SetActive(false);
-        }
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("COLLIDINGGGGG");
-        if (collision.gameObject.tag == "player")
-        {
+           // g_player.transform.position = new Vector3(0.0f, 0.0f, this.transform.position.z);
+            //this.gameObject.SetActive(false);
+            SceneManager.LoadScene(loadedLevel.buildIndex);
 
-            g_player.transform.position = new Vector3(0.0f, 0.0f, this.transform.position.z);
-            this.gameObject.SetActive(false);
         }
     }
+
 }
