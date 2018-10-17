@@ -14,15 +14,16 @@ public class ProjectileCollision : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		// WHAT
-	}
+
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.tag == "player")
+        if(collision.collider.tag == "player" || collision.collider.tag == "box")
         {
-            g_player.transform.position = new Vector3(0.0f,0.0f,this.transform.position.z);
             this.gameObject.SetActive(false);
         }
+
+        
     }
 }

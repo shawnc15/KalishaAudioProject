@@ -29,7 +29,8 @@ public class ProjectileFiring : MonoBehaviour {
         if (timer % 150 == 0)
         {
             g_placeholderProjectile = Instantiate(projectilePrefab);
-            g_placeholderProjectile.transform.position = this.transform.position;
+            g_placeholderProjectile.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+            g_placeholderProjectile.GetComponent<SpriteRenderer>().sortingOrder = 1;
             l_projectiles.Add(g_placeholderProjectile);
             
         }
