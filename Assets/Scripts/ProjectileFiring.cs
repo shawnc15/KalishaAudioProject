@@ -11,13 +11,13 @@ public class ProjectileFiring : MonoBehaviour {
     private float timer;
     public float interval;
     public string direction;
+    public float speed;
 
     // Use this for initialization
     void Start () {
         l_projectiles = new List<GameObject>();
         g_player = GameObject.Find("Player");
         timer = 0;
-        interval = 100;
         
     }
 
@@ -64,7 +64,7 @@ public class ProjectileFiring : MonoBehaviour {
             switch (direction)
             {
                 case "left":
-                    l_projectiles[i].GetComponent<Transform>().Translate(Vector3.left * Time.deltaTime);
+                    l_projectiles[i].GetComponent<Transform>().Translate((Vector3.left * speed) * Time.deltaTime);
                     if (l_projectiles[i].GetComponent<SpriteRenderer>().bounds.center.x < -8)
                     {
                         GameObject.Destroy(l_projectiles[i]);
@@ -73,7 +73,7 @@ public class ProjectileFiring : MonoBehaviour {
                     }
                     break;
                 case "right":
-                    l_projectiles[i].GetComponent<Transform>().Translate(Vector3.right * Time.deltaTime);
+                    l_projectiles[i].GetComponent<Transform>().Translate((Vector3.right * speed) * Time.deltaTime);
                     if (l_projectiles[i].GetComponent<SpriteRenderer>().bounds.center.x > 8)
                     {
                         GameObject.Destroy(l_projectiles[i]);
@@ -82,7 +82,7 @@ public class ProjectileFiring : MonoBehaviour {
                     }
                     break;
                 case "up":
-                    l_projectiles[i].GetComponent<Transform>().Translate(Vector3.up * Time.deltaTime);
+                    l_projectiles[i].GetComponent<Transform>().Translate((Vector3.up * speed) * Time.deltaTime);
                     if (l_projectiles[i].GetComponent<SpriteRenderer>().bounds.center.y > 6)
                     {
                         GameObject.Destroy(l_projectiles[i]);
@@ -91,7 +91,7 @@ public class ProjectileFiring : MonoBehaviour {
                     }
                     break;
                 case "down":
-                    l_projectiles[i].GetComponent<Transform>().Translate(Vector3.down * Time.deltaTime);
+                    l_projectiles[i].GetComponent<Transform>().Translate((Vector3.down * speed) * Time.deltaTime);
                     if (l_projectiles[i].GetComponent<SpriteRenderer>().bounds.center.y < -6)
                     {
                         GameObject.Destroy(l_projectiles[i]);
