@@ -18,8 +18,8 @@ public class Horrorhound : MonoBehaviour {
     private Vector3 end;
     private Transform[] path;
     public GameObject[] pathObjects;
-    private GameObject g_player;
     private Scene loadedLevel;
+    public GameObject g_player;
 
     // Use this for initialization
     void Start () {
@@ -29,11 +29,10 @@ public class Horrorhound : MonoBehaviour {
         {
             path[i] = pathObjects[i].transform;
         }
-        maxSpeed = 0.1f;
         step = 0;
         start = path[0].position;
         end = path[1].position;
-        accelRate = 0.05f;
+        accelRate = maxSpeed * 10.0f;
         position = transform.position;
         loadedLevel = SceneManager.GetActiveScene();
 
@@ -63,7 +62,7 @@ public class Horrorhound : MonoBehaviour {
     {
         float distance = (end - transform.position).magnitude;
         
-        if (distance <= 0.1f)
+        if (distance <= 0.2f)
         {
             //Debug.Log("Next");
             NextStep();
@@ -72,7 +71,7 @@ public class Horrorhound : MonoBehaviour {
 
     void Move()
     {
-        acceleration = accelRate * direction;
+        acceleration = accelRate * direction *Time.deltaTime;
         velocity += acceleration;
         //Debug.Log(velocity.magnitude);
         if (velocity.magnitude > maxSpeed)

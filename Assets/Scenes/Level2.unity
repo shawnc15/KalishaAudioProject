@@ -1252,7 +1252,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.00038503855, y: 0.000000033527613}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -1263,7 +1263,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.1330394, y: 0.1353502}
   m_EdgeRadius: 0
 --- !u!114 &75435876
 MonoBehaviour:
@@ -1277,9 +1277,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25cdfc24f1e2b8c41a595a2fe2c1e656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxSpeed: 0.1
   pathObjects:
   - {fileID: 1880007772}
   - {fileID: 304824912}
+  g_player: {fileID: 0}
 --- !u!50 &75435877
 Rigidbody2D:
   serializedVersion: 4
@@ -4973,9 +4975,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25cdfc24f1e2b8c41a595a2fe2c1e656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxSpeed: 0.1
   pathObjects:
   - {fileID: 695574121}
   - {fileID: 943752511}
+  g_player: {fileID: 0}
 --- !u!50 &306705030
 Rigidbody2D:
   serializedVersion: 4
@@ -8503,9 +8507,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25cdfc24f1e2b8c41a595a2fe2c1e656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxSpeed: 0.1
   pathObjects:
   - {fileID: 2048300826}
   - {fileID: 2082146599}
+  g_player: {fileID: 0}
 --- !u!50 &604489021
 Rigidbody2D:
   serializedVersion: 4
@@ -14445,9 +14451,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25cdfc24f1e2b8c41a595a2fe2c1e656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxSpeed: 0.1
   pathObjects:
   - {fileID: 673412976}
   - {fileID: 351692342}
+  g_player: {fileID: 0}
 --- !u!50 &965232076
 Rigidbody2D:
   serializedVersion: 4
@@ -15870,9 +15878,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25cdfc24f1e2b8c41a595a2fe2c1e656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxSpeed: 0.1
   pathObjects:
   - {fileID: 620149330}
   - {fileID: 1779846733}
+  g_player: {fileID: 0}
 --- !u!50 &1044549116
 Rigidbody2D:
   serializedVersion: 4
@@ -21624,7 +21634,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1465931887}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5592904, y: 0.55550325, z: -0.015625}
+  m_LocalPosition: {x: 3.55, y: 0.55550325, z: -0.015625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 75435874}
@@ -29962,9 +29972,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25cdfc24f1e2b8c41a595a2fe2c1e656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxSpeed: 0.1
   pathObjects:
   - {fileID: 649881181}
   - {fileID: 22836074}
+  g_player: {fileID: 0}
 --- !u!50 &2055327888
 Rigidbody2D:
   serializedVersion: 4
