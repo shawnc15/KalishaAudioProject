@@ -1,0 +1,33 @@
+<!DOCTYPE SceneVersion>
+<SceneVersion VersionName="NewScene" ID="1">
+ <Element Name="Head" ID="1" Folder="Head">
+  <Drawing Key="" Name="1" Version="1"/>
+ </Element>
+ <Element Name="Body" ID="9" Folder="Body">
+  <Drawing Key="" Name="1" Version="1"/>
+ </Element>
+ <Element Name="Left_Foot" ID="10" Folder="Left_Foot">
+  <Drawing Key="" Name="1" Version="1"/>
+ </Element>
+ <Element Name="Right_Foot" ID="11" Folder="Right_Foot">
+  <Drawing Key="" Name="1" Version="1"/>
+ </Element>
+ <Element Name="Left_Arm" ID="12" Folder="Left_Arm">
+  <Drawing Key="" Name="1" Version="1"/>
+ </Element>
+ <Element Name="Right_Arm" ID="13" Folder="Right_Arm">
+  <Drawing Key="" Name="1" Version="1"/>
+ </Element>
+ <Element Name="Hair" ID="14" Folder="Hair">
+  <Drawing Key="" Name="1" Version="1"/>
+ </Element>
+ <Element Name="Left_Eye" ID="15" Folder="Left_Eye">
+  <Drawing Key="" Name="1" Version="1"/>
+ </Element>
+ <Element Name="Right_Eye" ID="16" Folder="Right_Eye">
+  <Drawing Key="" Name="1" Version="1"/>
+ </Element>
+ <Element Name="Brow" ID="17" Folder="Brow">
+  <Drawing Key="" Name="1" Version="1"/>
+ </Element>
+</SceneVersion>
