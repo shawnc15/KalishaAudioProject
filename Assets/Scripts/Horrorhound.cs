@@ -34,6 +34,7 @@ public class Horrorhound : MonoBehaviour {
         end = path[1].position;
         accelRate = maxSpeed * 10.0f;
         position = transform.position;
+        //Debug.Log(transform.position + GetComponentInParent<Transform>().position);
         loadedLevel = SceneManager.GetActiveScene();
 
     }
@@ -44,7 +45,7 @@ public class Horrorhound : MonoBehaviour {
         CheckPosition();
         direction = (end - position).normalized;
         
-        //Debug.Log(position);
+        //Debug.Log(direction);
         transform.position = position;
 	}
 
@@ -71,9 +72,10 @@ public class Horrorhound : MonoBehaviour {
 
     void Move()
     {
-        acceleration = accelRate * direction *Time.deltaTime;
+        acceleration = accelRate * direction * Time.deltaTime;
         velocity += acceleration;
-        //Debug.Log(velocity.magnitude);
+        // get that acceleration thing from mouse guard
+        Debug.Log(acceleration);
         if (velocity.magnitude > maxSpeed)
         {
             velocity = maxSpeed * direction;

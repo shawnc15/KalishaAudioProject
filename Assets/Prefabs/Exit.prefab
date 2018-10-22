@@ -36,8 +36,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1424101167816564}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.48, y: 0.5, z: 0.026442414}
-  m_LocalScale: {x: 0.226, y: 0.241, z: 1}
+  m_LocalPosition: {x: -0.051, y: -10.468, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91d6c877d6f40df48831dbaaf7f98e64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: TestLoad
+  levelName: Level2
 --- !u!212 &212682891633250294
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -103,7 +103,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e099ec148d42bd94bb22e947dd7820c3, type: 3}
   m_Color: {r: 1, g: 0.8564266, b: 0, a: 1}
   m_FlipX: 0
