@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 
 public class Horrorhound : MonoBehaviour {
-
-    private float speed;
+    public Animator animator;
     private int step;
     private Vector3 position;
     private Vector3 velocity;
@@ -44,7 +43,17 @@ public class Horrorhound : MonoBehaviour {
         Move();
         CheckPosition();
         direction = (end - position).normalized;
-        
+        animator.SetFloat("xSpeed", Mathf.Abs(velocity.x));
+        animator.SetFloat("ySpeed", velocity.y);
+
+        if(velocity.x > 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
+        else if (velocity.x < 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
         //Debug.Log(direction);
         transform.position = position;
 	}
