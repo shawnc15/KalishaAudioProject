@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ProjectileFiring : MonoBehaviour {
-
+    public Animator animator;
     private GameObject g_player;
     private List<GameObject> l_projectiles;
     public GameObject projectilePrefab;
@@ -18,14 +18,30 @@ public class ProjectileFiring : MonoBehaviour {
         l_projectiles = new List<GameObject>();
         g_player = GameObject.Find("Player");
         timer = 0;
-        
+        switch (direction)
+        {
+            case "left":
+                animator.SetBool("sideways", true);
+                GetComponent<SpriteRenderer>().flipX = true;
+                break;
+            case "right":
+                animator.SetBool("sideways", true);
+                GetComponent<SpriteRenderer>().flipX = false;
+                break;
+            case "up":
+                animator.SetBool("up", true);
+                break;
+            case "down":
+                animator.SetBool("down", true);
+                break;
+            default:
+                break;
+        }
+
     }
 
     // Update is called once per frame
     void Update () {
-
-
-
         if (timer % 150 == 0)
         {
             g_placeholderProjectile = Instantiate(projectilePrefab);
@@ -98,6 +114,7 @@ public class ProjectileFiring : MonoBehaviour {
                         l_projectiles.Remove(l_projectiles[i]);
                         i--;
                     }
+                    transform.Rotate(Vector3.down);
                     break;
                 default:
                     break;
