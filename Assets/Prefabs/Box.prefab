@@ -61,7 +61,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &61712948017226068
 BoxCollider2D:
@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a37e03ca23a1e0a41bc7ced7e273e74a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocity: {x: 0, y: 0, z: 0}
+  collide: 0
 --- !u!212 &212029164549433022
 SpriteRenderer:
   m_ObjectHideFlags: 1
