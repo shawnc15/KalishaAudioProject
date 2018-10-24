@@ -1,14 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 81e3d0d2ae1f2764a9fb802dfa3ef56b
 TextureImporter:
   fileIDToRecycleName: {}
-=======
-guid: 66d439846818b4749824c731ddde1e16
-TextureImporter:
-  fileIDToRecycleName:
-    21300000: bhood-0002_0
->>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -38,33 +31,21 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD
     filterMode: -1
-=======
-    filterMode: 0
->>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
     aniso: -1
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< HEAD
   spriteMode: 1
-=======
-  spriteMode: 2
->>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
   spritePixelsToUnits: 100
-=======
-  spritePixelsToUnits: 200
->>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -88,15 +69,6 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-<<<<<<< HEAD
-  spriteSheet:
-    serializedVersion: 2
-    sprites: []
-    outline: []
-    physicsShape: []
-    bones: []
-    spriteID: fcd4e9800731cd043a33c4b7a60862ba
-=======
   - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -121,32 +93,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: bhood-0002_0
-      rect:
-        serializedVersion: 2
-        x: 89
-        y: 120
-        width: 259
-        height: 164
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d8dd7c00708f4f44a490522a6eb5c09
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9871f26df43af2c41a4cb6a5a4ff4e7d
->>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
+    spriteID: 
     vertices: []
     indices: 
     edges: []
