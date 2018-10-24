@@ -43,7 +43,7 @@ public class Box : MonoBehaviour {
     {
         if(collision.collider.tag == "box")
         {
-            boxBody.mass = 10.0f;
+           // boxBody.mass = 10.0f;
         }
         if (collision.collider.tag == "wall")
         {
@@ -55,7 +55,7 @@ public class Box : MonoBehaviour {
     {
         if (collision.collider.tag == "box")
         {
-            boxBody.mass = 0.01f;
+           // boxBody.mass = 0.01f;
         }
     }
 
