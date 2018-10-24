@@ -84,7 +84,7 @@ public class Horrorhound : MonoBehaviour {
         acceleration = accelRate * direction * Time.deltaTime;
         velocity += acceleration;
         // get that acceleration thing from mouse guard
-        Debug.Log(acceleration);
+        //Debug.Log(acceleration);
         if (velocity.magnitude > maxSpeed)
         {
             velocity = maxSpeed * direction;
