@@ -17,7 +17,10 @@ public class Box : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Constrain();
+        
+
         velocity = boxBody.velocity;
+
     }
 
     void Constrain()
@@ -49,6 +52,10 @@ public class Box : MonoBehaviour {
         {
             
         }
+        if (collision.collider.tag == "talon")
+        {
+           
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -56,6 +63,10 @@ public class Box : MonoBehaviour {
         if (collision.collider.tag == "box")
         {
            // boxBody.mass = 0.01f;
+        }
+        if (collision.collider.tag == "talon")
+        {
+
         }
     }
 
