@@ -45,7 +45,7 @@ public class Horrorhound : MonoBehaviour {
         direction = (end - position).normalized;
         animator.SetFloat("xSpeed", Mathf.Abs(velocity.x));
         animator.SetFloat("ySpeed", velocity.y);
-
+        Debug.Log(Mathf.Abs(velocity.x));
         if(velocity.x > 0)
         {
             GetComponent<SpriteRenderer>().flipX = false;
