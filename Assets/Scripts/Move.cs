@@ -18,7 +18,7 @@ public class Move: MonoBehaviour {
         MovementInput();
         animator.SetFloat("xSpeed", Mathf.Abs(moveVector.x));
         animator.SetFloat("ySpeed", moveVector.y);
-        Debug.Log(Mathf.Abs(moveVector.x));
+       // Debug.Log(Mathf.Abs(moveVector.x));
     }
 
     private void MovementInput()
