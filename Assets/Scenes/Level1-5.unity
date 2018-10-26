@@ -1399,7 +1399,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &72287556
 Transform:
   m_ObjectHideFlags: 0
@@ -8277,11 +8277,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4474616317153718, guid: a0831e3f8dbe77442b01f4645881a698, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2.89
+      value: 2.72
       objectReference: {fileID: 0}
     - target: {fileID: 4474616317153718, guid: a0831e3f8dbe77442b01f4645881a698, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.55
+      value: 0.48
       objectReference: {fileID: 0}
     - target: {fileID: 4474616317153718, guid: a0831e3f8dbe77442b01f4645881a698, type: 2}
       propertyPath: m_LocalPosition.z
@@ -12529,7 +12529,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &950126526
 Transform:
   m_ObjectHideFlags: 0
@@ -15059,6 +15059,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1152956282}
+  velocity: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
   maxSpeed: 0.1
   pathObjects:
   - {fileID: 1401891341}
@@ -22968,6 +22970,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1152956282}
+  velocity: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
   maxSpeed: 0.1
   pathObjects:
   - {fileID: 1550810792}
@@ -22988,7 +22992,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -23823,7 +23827,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25cdfc24f1e2b8c41a595a2fe2c1e656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1152956282}
+  animator: {fileID: 1822103928}
+  velocity: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
   maxSpeed: 0.1
   pathObjects:
   - {fileID: 1830359218}

@@ -83,11 +83,14 @@ public class Box : MonoBehaviour {
             {
                 case "right":
                 case "left":
+                    Debug.Log("STopping in X");
                     velocity.x = 0;
+                    transform.position = new Vector2(transform.position.x, transform.position.y);
                     break;
                 case "up":
                 case "down":
                     velocity.y = 0;
+                    Debug.Log("STopping in Y");
                     break;
                 default:
                     break;
