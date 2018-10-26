@@ -389,6 +389,7 @@ GameObject:
   - component: {fileID: 75435877}
   - component: {fileID: 75435876}
   - component: {fileID: 75435875}
+  - component: {fileID: 75435879}
   m_Layer: 0
   m_Name: HorrorHound
   m_TagString: Untagged
@@ -405,7 +406,7 @@ Transform:
   m_GameObject: {fileID: 75435873}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -9.5, y: 2.9, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 4, y: 4, z: 6}
   m_Children: []
   m_Father: {fileID: 1465931888}
   m_RootOrder: 0
@@ -448,6 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25cdfc24f1e2b8c41a595a2fe2c1e656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 75435879}
   maxSpeed: 0.1
   pathObjects:
   - {fileID: 1880007772}
@@ -521,6 +523,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &75435879
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 75435873}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 59ea41bf8c99f1644b68496d42125b02, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &96968575
 Prefab:
   m_ObjectHideFlags: 0
@@ -1116,6 +1136,7 @@ GameObject:
   - component: {fileID: 306705030}
   - component: {fileID: 306705029}
   - component: {fileID: 306705028}
+  - component: {fileID: 306705034}
   m_Layer: 0
   m_Name: HorrorHound
   m_TagString: Untagged
@@ -1132,7 +1153,7 @@ Transform:
   m_GameObject: {fileID: 306705026}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.5, y: 2.9, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 4, y: 4, z: 6}
   m_Children: []
   m_Father: {fileID: 1900659244}
   m_RootOrder: 0
@@ -1175,6 +1196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25cdfc24f1e2b8c41a595a2fe2c1e656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 75435879}
   maxSpeed: 0.1
   pathObjects:
   - {fileID: 695574121}
@@ -1248,6 +1270,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &306705034
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 306705026}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 59ea41bf8c99f1644b68496d42125b02, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &307627813
 Prefab:
   m_ObjectHideFlags: 0
@@ -2191,6 +2231,7 @@ GameObject:
   - component: {fileID: 604489021}
   - component: {fileID: 604489020}
   - component: {fileID: 604489019}
+  - component: {fileID: 604489025}
   m_Layer: 0
   m_Name: HorrorHound
   m_TagString: Untagged
@@ -2207,7 +2248,7 @@ Transform:
   m_GameObject: {fileID: 604489017}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -9.5, y: 2.9, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 4, y: 4, z: 6}
   m_Children: []
   m_Father: {fileID: 885774535}
   m_RootOrder: 0
@@ -2250,6 +2291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25cdfc24f1e2b8c41a595a2fe2c1e656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 75435879}
   maxSpeed: 0.1
   pathObjects:
   - {fileID: 2048300826}
@@ -2323,6 +2365,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &604489025
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 604489017}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 59ea41bf8c99f1644b68496d42125b02, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &620149330
 GameObject:
   m_ObjectHideFlags: 0
@@ -3839,6 +3899,7 @@ GameObject:
   - component: {fileID: 965232076}
   - component: {fileID: 965232075}
   - component: {fileID: 965232074}
+  - component: {fileID: 965232080}
   m_Layer: 0
   m_Name: HorrorHound
   m_TagString: Untagged
@@ -3855,7 +3916,7 @@ Transform:
   m_GameObject: {fileID: 965232072}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.5, y: 2.9, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 4, y: 4, z: 6}
   m_Children: []
   m_Father: {fileID: 765469308}
   m_RootOrder: 0
@@ -3898,6 +3959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25cdfc24f1e2b8c41a595a2fe2c1e656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 75435879}
   maxSpeed: 0.1
   pathObjects:
   - {fileID: 673412976}
@@ -3971,6 +4033,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &965232080
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 965232072}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 59ea41bf8c99f1644b68496d42125b02, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &991479345
 Prefab:
   m_ObjectHideFlags: 0
@@ -4047,6 +4127,7 @@ GameObject:
   - component: {fileID: 1044549116}
   - component: {fileID: 1044549115}
   - component: {fileID: 1044549114}
+  - component: {fileID: 1044549120}
   m_Layer: 0
   m_Name: HorrorHound
   m_TagString: Untagged
@@ -4063,7 +4144,7 @@ Transform:
   m_GameObject: {fileID: 1044549112}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -9.5, y: 2.9, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 4, y: 4, z: 6}
   m_Children: []
   m_Father: {fileID: 1314927768}
   m_RootOrder: 0
@@ -4106,6 +4187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25cdfc24f1e2b8c41a595a2fe2c1e656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 75435879}
   maxSpeed: 0.1
   pathObjects:
   - {fileID: 620149330}
@@ -4179,6 +4261,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1044549120
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1044549112}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 59ea41bf8c99f1644b68496d42125b02, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1050417763
 Prefab:
   m_ObjectHideFlags: 0
@@ -7219,6 +7319,7 @@ GameObject:
   - component: {fileID: 2055327888}
   - component: {fileID: 2055327887}
   - component: {fileID: 2055327886}
+  - component: {fileID: 2055327892}
   m_Layer: 0
   m_Name: HorrorHound
   m_TagString: Untagged
@@ -7278,6 +7379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25cdfc24f1e2b8c41a595a2fe2c1e656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 75435879}
   maxSpeed: 0.1
   pathObjects:
   - {fileID: 649881181}
@@ -7351,6 +7453,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2055327892
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2055327884}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 59ea41bf8c99f1644b68496d42125b02, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2062037430
 Prefab:
   m_ObjectHideFlags: 0

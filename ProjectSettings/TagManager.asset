@@ -10,6 +10,7 @@ TagManager:
   - player
   - box
   - wall
+  - talon
   layers:
   - Default
   - TransparentFX
