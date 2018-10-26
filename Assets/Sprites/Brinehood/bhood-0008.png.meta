@@ -11,11 +11,18 @@ guid: 696daea633ac5274db5d82f5d4fc0d49
 >>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
 =======
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 guid: b4a8a80bb4260e24685a90e0101b9ebd
 =======
 guid: 5c5bbf6b6cc94164da2f8f986dadf394
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+guid: edfcacf8d0835b54899851e3777eb00f
+>>>>>>> Stashed changes
+=======
 >>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
+>>>>>>> sam
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -80,7 +87,11 @@ TextureImporter:
 >>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
 =======
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     wrapW: -1
+=======
+    wrapW: 1
+>>>>>>> Stashed changes
 =======
     wrapW: 1
 >>>>>>> Stashed changes
@@ -136,7 +147,11 @@ TextureImporter:
 =======
 =======
 <<<<<<< Updated upstream
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
 >>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
+>>>>>>> sam
   - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -165,7 +180,12 @@ TextureImporter:
 =======
 =======
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+=======
 >>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
+>>>>>>> sam
   spriteSheet:
     serializedVersion: 2
     sprites: []
@@ -184,11 +204,18 @@ TextureImporter:
 >>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
 =======
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     spriteID: 
 =======
     spriteID: 30d15c7e3b3e6944aa144777883d3c72
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    spriteID: dabcf845e22dea747a8331c2cb483632
+>>>>>>> Stashed changes
+=======
 >>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
+>>>>>>> sam
     vertices: []
     indices: 
     edges: []

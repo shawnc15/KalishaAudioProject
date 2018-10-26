@@ -18,9 +18,13 @@ TextureImporter:
 >>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
 =======
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 guid: 0c5e1c09da7dcf54abee19d1313fa257
 =======
 guid: 68aca0d1746ef1d4db45c39df3168d2c
+>>>>>>> Stashed changes
+=======
+guid: 7796ff4e2fd4086428c46df2f814d01a
 >>>>>>> Stashed changes
 TextureImporter:
   fileIDToRecycleName: {}
@@ -87,7 +91,11 @@ TextureImporter:
 >>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
 =======
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     wrapW: -1
+=======
+    wrapW: 1
+>>>>>>> Stashed changes
 =======
     wrapW: 1
 >>>>>>> Stashed changes
@@ -154,7 +162,11 @@ TextureImporter:
 =======
 =======
 <<<<<<< Updated upstream
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
 >>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
+>>>>>>> sam
   - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -210,6 +222,8 @@ TextureImporter:
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
   spriteSheet:
     serializedVersion: 2
     sprites: []
@@ -217,11 +231,18 @@ TextureImporter:
     physicsShape: []
     bones: []
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     spriteID: 
 =======
     spriteID: 04a28af165230c84898c962469f555e4
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    spriteID: b3f3ed689d9abe243b754b255863c6f2
+>>>>>>> Stashed changes
+=======
 >>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
+>>>>>>> sam
     vertices: []
     indices: 
     edges: []
