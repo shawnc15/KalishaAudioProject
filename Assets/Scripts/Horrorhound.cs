@@ -8,8 +8,8 @@ public class Horrorhound : MonoBehaviour {
     public Animator animator;
     private int step;
     private Vector3 position;
-    private Vector3 velocity;
-    private Vector3 acceleration;
+    public Vector3 velocity;
+    public Vector3 acceleration;
     private float accelRate;
     public float maxSpeed;
     private Vector3 direction;
@@ -19,6 +19,7 @@ public class Horrorhound : MonoBehaviour {
     public GameObject[] pathObjects;
     private Scene loadedLevel;
     public GameObject g_player;
+    private int waitTimer;
 
     // Use this for initialization
     void Start () {
@@ -29,20 +30,24 @@ public class Horrorhound : MonoBehaviour {
             path[i] = pathObjects[i].transform;
         }
         step = 0;
-        start = path[0].position;
-        end = path[1].position;
+        start = path[0].localPosition;
+        end = path[1].localPosition;
         accelRate = maxSpeed * 10.0f;
-        position = transform.position;
-        //Debug.Log(transform.position + GetComponentInParent<Transform>().position);
+        position = transform.localPosition;
         loadedLevel = SceneManager.GetActiveScene();
-
+        waitTimer = 20;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
-    void Update () {
+    void FixedUpdate () {
+        SetDirection();
         Move();
+        if (transform.localPosition.y != 0.0f)
+        {
+            Debug.Log("REEEE");
+        }
         CheckPosition();
-        direction = (end - position).normalized;
         animator.SetFloat("xSpeed", Mathf.Abs(velocity.x));
         animator.SetFloat("ySpeed", velocity.y);
 
@@ -54,35 +59,63 @@ public class Horrorhound : MonoBehaviour {
         {
             GetComponent<SpriteRenderer>().flipX = true;
         }
-        //Debug.Log(direction);
-        transform.position = position;
+        transform.localPosition = position;
+        position = transform.localPosition;
 	}
 
     void NextStep()
     {
+        velocity = new Vector2(0, 0);
         step++;
         step %= path.GetLength(0);
-        start = path[step].position;
-        end = path[(step + 1) % path.GetLength(0)].position;
-        //Debug.Log("Start: " + start);
-        //Debug.Log("End: " + end);
+        start = path[step].localPosition;
+        end = path[(step + 1) % path.GetLength(0)].localPosition;
     }
     
     void CheckPosition()
     {
-        float distance = (end - transform.position).magnitude;
-        
-        if (distance <= 0.2f)
+        if (waitTimer <= 0)
         {
-            //Debug.Log("Next");
-            NextStep();
+            float distance = (end - transform.localPosition).magnitude;
+            waitTimer = 20;
+            //Debug.Log(distance);
+            if (distance <= 0.6f)
+            {
+               // Debug.Log("Next");
+                NextStep();
+            }
         }
+        waitTimer--;
+    }
+
+    void SetDirection()
+    {
+        direction = (end - position).normalized;
+        if (direction.x > 0)
+        {
+            direction = Vector2.right;
+        }
+        else if (direction.x < 0)
+        {
+            direction = Vector2.left;
+        }
+        else if (direction.y > 0)
+        {
+            direction = Vector2.up;
+        }
+        else if (direction.y < 0)
+        {
+            direction = Vector2.down;
+        }
+        Debug.Log(direction);
     }
 
     void Move()
     {
-        acceleration = accelRate * direction * Time.deltaTime;
-        velocity += acceleration;
+        acceleration = accelRate * direction;
+        velocity += acceleration;        
+        Debug.Log(acceleration);
+        //Debug.Log(direction);
         // get that acceleration thing from mouse guard
         //Debug.Log(acceleration);
         if (velocity.magnitude > maxSpeed)
@@ -102,7 +135,10 @@ public class Horrorhound : MonoBehaviour {
            // g_player.transform.position = new Vector3(0.0f, 0.0f, this.transform.position.z);
             //this.gameObject.SetActive(false);
             SceneManager.LoadScene(loadedLevel.buildIndex);
-
+        }
+        if (collision.gameObject.tag == "box")
+        {
+            NextStep();
         }
     }
 

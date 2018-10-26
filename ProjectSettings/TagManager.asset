@@ -9,6 +9,7 @@ TagManager:
   - barrier
   - player
   - box
+  - wall
   layers:
   - Default
   - TransparentFX

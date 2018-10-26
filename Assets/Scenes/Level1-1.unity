@@ -400,18 +400,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 22
       objectReference: {fileID: 0}
-    - target: {fileID: 4474616317153718, guid: a0831e3f8dbe77442b01f4645881a698, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4474616317153718, guid: a0831e3f8dbe77442b01f4645881a698, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4474616317153718, guid: a0831e3f8dbe77442b01f4645881a698, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1225205438724342, guid: a0831e3f8dbe77442b01f4645881a698, type: 2}
       propertyPath: m_Name
       value: Box (15)
@@ -1177,18 +1165,6 @@ Prefab:
     - target: {fileID: 4474616317153718, guid: a0831e3f8dbe77442b01f4645881a698, type: 2}
       propertyPath: m_RootOrder
       value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4474616317153718, guid: a0831e3f8dbe77442b01f4645881a698, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4474616317153718, guid: a0831e3f8dbe77442b01f4645881a698, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4474616317153718, guid: a0831e3f8dbe77442b01f4645881a698, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1225205438724342, guid: a0831e3f8dbe77442b01f4645881a698, type: 2}
       propertyPath: m_Name

@@ -7,21 +7,21 @@ public class Move: MonoBehaviour {
     public float moveRate = .11f;
     public Animator animator;
     public Rigidbody2D playerBody;
-    Vector3 moveVector = Vector3.zero;
+    public Vector3 moveVector = Vector3.zero;
     // Use this for initialization
     void Start () {
 		
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         MovementInput();
         animator.SetFloat("xSpeed", Mathf.Abs(moveVector.x));
         animator.SetFloat("ySpeed", moveVector.y);
         //Debug.Log(Mathf.Abs(moveVector.x));
     }
 
-    private void MovementInput()
+    public void MovementInput()
     {
         moveVector = Vector3.zero;
         if (Input.GetAxis("moveUp") > 0)
