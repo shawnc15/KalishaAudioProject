@@ -1,4 +1,22 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
+guid: e46089b01d777d04a8fc7279976c60b7
+TextureImporter:
+  fileIDToRecycleName: {}
+=======
+<<<<<<< HEAD
+guid: 2d93c16118904be48866eb46ce69e21d
+TextureImporter:
+  fileIDToRecycleName: {}
+=======
+guid: 584292e8506b94f46a4419e1a8054ab0
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bhood-0016_0
+>>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
+>>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
+=======
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 guid: 2d93c16118904be48866eb46ce69e21d
@@ -10,6 +28,7 @@ guid: b79c5719d1df29144a30085154bcfc69
 >>>>>>> Stashed changes
 TextureImporter:
   fileIDToRecycleName: {}
+>>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -39,11 +58,38 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
     filterMode: -1
+=======
+<<<<<<< HEAD
+    filterMode: -1
+=======
+    filterMode: 0
+>>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
+>>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
+=======
+    filterMode: -1
+>>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
     aniso: -1
     mipBias: -100
     wrapU: 1
     wrapV: 1
+<<<<<<< HEAD
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+<<<<<<< HEAD
+  spriteMode: 1
+=======
+<<<<<<< HEAD
+  spriteMode: 1
+=======
+  spriteMode: 2
+>>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
+>>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
+=======
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
     wrapW: -1
@@ -57,11 +103,24 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
+>>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+<<<<<<< HEAD
   spritePixelsToUnits: 100
+=======
+<<<<<<< HEAD
+  spritePixelsToUnits: 100
+=======
+  spritePixelsToUnits: 200
+>>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
+>>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
+=======
+  spritePixelsToUnits: 100
+>>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -85,8 +144,29 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+    outline: []
+    physicsShape: []
+    bones: []
+<<<<<<< HEAD
+    spriteID: 12dc1b54262a5aa459dca6182374a19e
+=======
+    spriteID: 4751d4e867ecb004fb3f0bbe15f0b51c
+=======
+=======
 <<<<<<< Updated upstream
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
+>>>>>>> sam
   - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -109,6 +189,37 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+<<<<<<< HEAD
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bhood-0016_0
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 120
+        width: 260
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333f9614182f32840993aec73132ce92
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 240b4c692e595c448b0cf2e77a5b0390
+>>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
+>>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
+=======
 =======
 >>>>>>> Stashed changes
 =======
@@ -125,9 +236,13 @@ TextureImporter:
 =======
     spriteID: 21cb007d2396acb4288ec5527c4355ef
 >>>>>>> Stashed changes
+<<<<<<< HEAD
 =======
     spriteID: cb06a025f2b356540b6c4e3253770c78
 >>>>>>> Stashed changes
+=======
+>>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
+>>>>>>> sam
     vertices: []
     indices: 
     edges: []
