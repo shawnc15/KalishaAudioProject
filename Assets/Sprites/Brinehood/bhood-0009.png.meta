@@ -1,9 +1,21 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
+guid: 37008cb6e69cea54284a19234adce79d
+=======
+<<<<<<< HEAD
+guid: 941bedfdbc721a74bbb948def24d4cc6
+=======
+guid: 70a75edb4da3ff34b835b844a8abd356
+>>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
+>>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
+=======
 <<<<<<< Updated upstream
 guid: 941bedfdbc721a74bbb948def24d4cc6
 =======
 guid: 7de90122c0f59374a89278155708ff63
 >>>>>>> Stashed changes
+>>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -35,11 +47,38 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
     filterMode: -1
+=======
+<<<<<<< HEAD
+    filterMode: -1
+=======
+    filterMode: 0
+>>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
+>>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
+=======
+    filterMode: -1
+>>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
     aniso: -1
     mipBias: -100
     wrapU: 1
     wrapV: 1
+<<<<<<< HEAD
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+<<<<<<< HEAD
+  spriteMode: 1
+=======
+<<<<<<< HEAD
+  spriteMode: 1
+=======
+  spriteMode: 2
+>>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
+>>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
+=======
 <<<<<<< Updated upstream
     wrapW: -1
 =======
@@ -49,11 +88,24 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
+>>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+<<<<<<< HEAD
   spritePixelsToUnits: 100
+=======
+<<<<<<< HEAD
+  spritePixelsToUnits: 100
+=======
+  spritePixelsToUnits: 200
+>>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
+>>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
+=======
+  spritePixelsToUnits: 100
+>>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -77,7 +129,14 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
 <<<<<<< Updated upstream
+>>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
   - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -100,19 +159,36 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+<<<<<<< HEAD
+>>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
+>>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
+=======
 =======
 >>>>>>> Stashed changes
+>>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
   spriteSheet:
     serializedVersion: 2
     sprites: []
     outline: []
     physicsShape: []
     bones: []
+<<<<<<< HEAD
+<<<<<<< HEAD
+    spriteID: 6ee0ecb014518104ebf40e77df6c7336
+=======
+<<<<<<< HEAD
+    spriteID: 8d998ce8198cc2a4987b7ddf00289b14
+=======
+    spriteID: c6e7a911ee6fc5f40aaf44d62b1a7137
+>>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
+>>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
+=======
 <<<<<<< Updated upstream
     spriteID: 
 =======
     spriteID: 225118be1d96e7c4c92f1c535cb340d0
 >>>>>>> Stashed changes
+>>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
     vertices: []
     indices: 
     edges: []

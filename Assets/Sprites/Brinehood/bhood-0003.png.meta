@@ -1,4 +1,22 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
+guid: e69736fb4c01a94498354035ebaeca0a
+TextureImporter:
+  fileIDToRecycleName: {}
+=======
+<<<<<<< HEAD
+guid: ef3e2c45fa9260d4b9d6bbb5cb9a93d4
+TextureImporter:
+  fileIDToRecycleName: {}
+=======
+guid: f70bd78c0843dc74eb2b198de4d73eef
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bhood-0003_0
+>>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
+>>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
+=======
 <<<<<<< Updated upstream
 guid: ef3e2c45fa9260d4b9d6bbb5cb9a93d4
 =======
@@ -6,6 +24,7 @@ guid: 15b8892f8ffff46448b0e4a16625b33b
 >>>>>>> Stashed changes
 TextureImporter:
   fileIDToRecycleName: {}
+>>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -35,11 +54,38 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
     filterMode: -1
+=======
+<<<<<<< HEAD
+    filterMode: -1
+=======
+    filterMode: 0
+>>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
+>>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
+=======
+    filterMode: -1
+>>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
     aniso: -1
     mipBias: -100
     wrapU: 1
     wrapV: 1
+<<<<<<< HEAD
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+<<<<<<< HEAD
+  spriteMode: 1
+=======
+<<<<<<< HEAD
+  spriteMode: 1
+=======
+  spriteMode: 2
+>>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
+>>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
+=======
 <<<<<<< Updated upstream
     wrapW: -1
 =======
@@ -49,11 +95,24 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
+>>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+<<<<<<< HEAD
   spritePixelsToUnits: 100
+=======
+<<<<<<< HEAD
+  spritePixelsToUnits: 100
+=======
+  spritePixelsToUnits: 200
+>>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
+>>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
+=======
+  spritePixelsToUnits: 100
+>>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -77,7 +136,25 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+    outline: []
+    physicsShape: []
+    bones: []
+<<<<<<< HEAD
+    spriteID: cf68e9df231f49a4bbc650f9759501d7
+=======
+    spriteID: f49e66f536ee3094d98fe7f26c54dc47
+=======
+=======
 <<<<<<< Updated upstream
+>>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
   - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -100,6 +177,37 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+<<<<<<< HEAD
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bhood-0003_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 119
+        width: 261
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a742eb5702f234ca03855e5442ad22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 41570e8feb7f5544787473291323539e
+>>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
+>>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
+=======
 =======
 >>>>>>> Stashed changes
   spriteSheet:
@@ -113,6 +221,7 @@ TextureImporter:
 =======
     spriteID: f1556ba03e61d6641a21873759080688
 >>>>>>> Stashed changes
+>>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
     vertices: []
     indices: 
     edges: []
