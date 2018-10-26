@@ -1,8 +1,12 @@
 fileFormatVersion: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 guid: ef3e2c45fa9260d4b9d6bbb5cb9a93d4
 =======
 guid: 15b8892f8ffff46448b0e4a16625b33b
+>>>>>>> Stashed changes
+=======
+guid: 1e165ad6b06e7964b9b4b178d6c69d02
 >>>>>>> Stashed changes
 TextureImporter:
   fileIDToRecycleName: {}
@@ -41,7 +45,11 @@ TextureImporter:
     wrapU: 1
     wrapV: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     wrapW: -1
+=======
+    wrapW: 1
+>>>>>>> Stashed changes
 =======
     wrapW: 1
 >>>>>>> Stashed changes
@@ -78,6 +86,7 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -102,6 +111,8 @@ TextureImporter:
     androidETC2FallbackOverride: 0
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
   spriteSheet:
     serializedVersion: 2
     sprites: []
@@ -109,9 +120,13 @@ TextureImporter:
     physicsShape: []
     bones: []
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     spriteID: 
 =======
     spriteID: f1556ba03e61d6641a21873759080688
+>>>>>>> Stashed changes
+=======
+    spriteID: 35f7deb8aad108f438c6b22f8f98b739
 >>>>>>> Stashed changes
     vertices: []
     indices: 
