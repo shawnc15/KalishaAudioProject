@@ -5,7 +5,8 @@ using UnityEngine;
 public class Box : MonoBehaviour
 {
 
-
+    public Vector3 velocity;
+    public bool collide;
     Rigidbody2D boxBody;
     bool touchingPlayer;
 
@@ -23,6 +24,10 @@ public class Box : MonoBehaviour
         Constrain();
         //transform.position = position;
         //velocity = new Vector2(0, 0);
+    }
+
+        velocity = boxBody.velocity;
+
     }
 
     void Constrain()
