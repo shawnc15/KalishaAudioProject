@@ -2,19 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Box : MonoBehaviour {
+public class Box : MonoBehaviour
+{
 
 
     Rigidbody2D boxBody;
+    bool touchingPlayer;
 
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
+        touchingPlayer = false;
         boxBody = GetComponent<Rigidbody2D>();
-	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
         Constrain();
         //transform.position = position;
         //velocity = new Vector2(0, 0);
@@ -22,24 +27,24 @@ public class Box : MonoBehaviour {
 
     void Constrain()
     {
-       
-            if (boxBody.velocity.magnitude > 0)
-            {
-                Vector3 tempVelocity = boxBody.velocity;
 
-                if (boxBody.velocity.x>boxBody.velocity.y)
-                {
-                    tempVelocity.y = 0;
-                }
-                else
-                {
-                    tempVelocity.x = 0;
-                }
+        if (boxBody.velocity.magnitude > 0)
+        {
+            Vector3 tempVelocity = boxBody.velocity;
+
+            if (boxBody.velocity.x > boxBody.velocity.y)
+            {
+                tempVelocity.y = 0;
             }
+            else
+            {
+                tempVelocity.x = 0;
+            }
+        }
     }
 
     string CheckWhere(GameObject obstacle)
-    {        
+    {
         float isForwardOrBehind = Vector2.Dot(obstacle.transform.position - transform.position, Vector2.up);
         float rightOrLeft = Vector3.Dot(obstacle.transform.position - transform.position, Vector2.right);
         // obstacle is in front of object
@@ -63,15 +68,19 @@ public class Box : MonoBehaviour {
         {
             return "right";
         }
-       
+
 
         return "Nothing";
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
+        if(collision.gameObject.tag == "player")
+        {
+            touchingPlayer = true;
+        }
         if (collision.gameObject.tag != "player")
-        { 
+        {
             Vector2 position = new Vector2(transform.position.x, transform.position.y);
             Vector2 collisionPos = new Vector2(collision.transform.position.x, collision.transform.position.y);
             Vector2 distance = position - collisionPos;
@@ -79,24 +88,42 @@ public class Box : MonoBehaviour {
             //Debug.Log(CheckWhere(collision.gameObject));
 
             Vector2 velocity = GetComponent<Rigidbody2D>().velocity;
+            Debug.Log(velocity);
+
             switch (CheckWhere(collision.gameObject))
             {
                 case "right":
                 case "left":
                     Debug.Log("STopping in X");
-                    velocity.x = 0;
-                    transform.position = new Vector2(transform.position.x, transform.position.y);
+                    velocity.x = -velocity.x;
+                    transform.position = new Vector2(transform.position.x + velocity.x/10, transform.position.y);
                     break;
                 case "up":
                 case "down":
-                    velocity.y = 0;
+                    velocity.y = -velocity.y;
+                    transform.position = new Vector2(transform.position.x, transform.position.y + velocity.y/ 10);
                     Debug.Log("STopping in Y");
                     break;
                 default:
                     break;
             }
 
+            if (!touchingPlayer)
+            {
+                GetComponent<Rigidbody2D>().mass = 100000;
+            }
+            if (touchingPlayer)
+            {
+                GetComponent<Rigidbody2D>().mass = 0;
+            }
         }
     }
-
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "player")
+        {
+            touchingPlayer = false;
+        }
+        GetComponent<Rigidbody2D>().mass = 0;
+    }
 }
