@@ -22,17 +22,21 @@ public class ProjectileFiring : MonoBehaviour {
         {
             case "left":
                 animator.SetBool("sideways", true);
+                animator.GetParameter(0);
                 GetComponent<SpriteRenderer>().flipX = true;
                 break;
             case "right":
                 animator.SetBool("sideways", true);
+                animator.GetParameter(0);
                 GetComponent<SpriteRenderer>().flipX = false;
                 break;
             case "up":
                 animator.SetBool("up", true);
+                animator.GetBool(1);
                 break;
             case "down":
                 animator.SetBool("down", true);
+                animator.GetBool(2);
                 break;
             default:
                 break;
