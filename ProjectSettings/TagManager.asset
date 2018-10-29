@@ -4,7 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - path
+  - shard
+  - barrier
   - player
+  - box
+  - wall
+  - talon
   layers:
   - Default
   - TransparentFX
