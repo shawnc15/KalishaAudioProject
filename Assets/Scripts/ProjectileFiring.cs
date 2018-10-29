@@ -22,17 +22,23 @@ public class ProjectileFiring : MonoBehaviour {
         {
             case "left":
                 animator.SetBool("sideways", true);
+                animator.GetParameter(0);
                 GetComponent<SpriteRenderer>().flipX = true;
                 break;
             case "right":
                 animator.SetBool("sideways", true);
+                animator.GetParameter(0);
                 GetComponent<SpriteRenderer>().flipX = false;
                 break;
             case "up":
                 animator.SetBool("up", true);
+                animator.GetBool(1);
+                GetComponent<SpriteRenderer>().transform.rotation = Quaternion.Euler(transform.eulerAngles + new Vector3(0,0,90.0f));
                 break;
             case "down":
                 animator.SetBool("down", true);
+                animator.GetBool(2);
+                GetComponent<SpriteRenderer>().transform.rotation = Quaternion.Euler(transform.eulerAngles + new Vector3(0, 0, -90.0f));
                 break;
             default:
                 break;
@@ -67,21 +73,12 @@ public class ProjectileFiring : MonoBehaviour {
     {
         for (int i = 0; i < l_projectiles.Count; i++)
         {
-            /*
-            if(l_projectiles[i].GetComponent<SpriteRenderer>().bounds.min.x < g_player.GetComponent<SpriteRenderer>().bounds.max.x && l_projectiles[i].GetComponent<SpriteRenderer>().bounds.max.x > g_player.GetComponent<SpriteRenderer>().bounds.min.x && l_projectiles[i].GetComponent<SpriteRenderer>().bounds.min.y < g_player.GetComponent<SpriteRenderer>().bounds.max.y && l_projectiles[i].GetComponent<SpriteRenderer>().bounds.max.y > g_player.GetComponent<SpriteRenderer>().bounds.min.x)
-            {
-                l_projectiles[i].SetActive(false);
-                GameObject.Destroy(l_projectiles[i]);
-                l_projectiles.Remove(l_projectiles[i]);
-                i--;
-                g_player.transform.position = new Vector3(0.0f,0.0f, g_player.transform.position.z);
-            }*/
             
             switch (direction)
             {
                 case "left":
                     l_projectiles[i].GetComponent<Transform>().Translate((Vector3.left * speed) * Time.deltaTime);
-                    if (l_projectiles[i].GetComponent<SpriteRenderer>().bounds.center.x < -8)
+                    if (l_projectiles[i].GetComponent<SpriteRenderer>().bounds.center.x < -15)
                     {
                         GameObject.Destroy(l_projectiles[i]);
                         l_projectiles.Remove(l_projectiles[i]);
@@ -90,7 +87,7 @@ public class ProjectileFiring : MonoBehaviour {
                     break;
                 case "right":
                     l_projectiles[i].GetComponent<Transform>().Translate((Vector3.right * speed) * Time.deltaTime);
-                    if (l_projectiles[i].GetComponent<SpriteRenderer>().bounds.center.x > 8)
+                    if (l_projectiles[i].GetComponent<SpriteRenderer>().bounds.center.x > 15)
                     {
                         GameObject.Destroy(l_projectiles[i]);
                         l_projectiles.Remove(l_projectiles[i]);
@@ -99,7 +96,7 @@ public class ProjectileFiring : MonoBehaviour {
                     break;
                 case "up":
                     l_projectiles[i].GetComponent<Transform>().Translate((Vector3.up * speed) * Time.deltaTime);
-                    if (l_projectiles[i].GetComponent<SpriteRenderer>().bounds.center.y > 6)
+                    if (l_projectiles[i].GetComponent<SpriteRenderer>().bounds.center.y > 15)
                     {
                         GameObject.Destroy(l_projectiles[i]);
                         l_projectiles.Remove(l_projectiles[i]);
@@ -108,13 +105,12 @@ public class ProjectileFiring : MonoBehaviour {
                     break;
                 case "down":
                     l_projectiles[i].GetComponent<Transform>().Translate((Vector3.down * speed) * Time.deltaTime);
-                    if (l_projectiles[i].GetComponent<SpriteRenderer>().bounds.center.y < -6)
+                    if (l_projectiles[i].GetComponent<SpriteRenderer>().bounds.center.y < -15)
                     {
                         GameObject.Destroy(l_projectiles[i]);
                         l_projectiles.Remove(l_projectiles[i]);
                         i--;
                     }
-                    transform.Rotate(Vector3.down);
                     break;
                 default:
                     break;

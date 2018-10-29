@@ -2,22 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Box : MonoBehaviour {
+public class Box : MonoBehaviour
+{
 
     public Vector3 velocity;
     public bool collide;
     Rigidbody2D boxBody;
-	// Use this for initialization
-	void Start () {
+    bool touchingPlayer;
+
+
+    // Use this for initialization
+    void Start()
+    {
+        touchingPlayer = false;
         boxBody = GetComponent<Rigidbody2D>();
-        collide = false;
-        velocity = boxBody.velocity;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
         Constrain();
-        
+        //transform.position = position;
+        //velocity = new Vector2(0, 0);
 
         velocity = boxBody.velocity;
 
@@ -25,7 +31,7 @@ public class Box : MonoBehaviour {
 
     void Constrain()
     {
-       
+
         if (boxBody.velocity.magnitude > 0)
         {
             Vector3 tempVelocity = boxBody.velocity;
@@ -39,35 +45,89 @@ public class Box : MonoBehaviour {
                 tempVelocity.x = 0;
             }
         }
-        
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    string CheckWhere(GameObject obstacle)
     {
-        if(collision.collider.tag == "box")
+        float isForwardOrBehind = Vector2.Dot(obstacle.transform.position - transform.position, Vector2.up);
+        float rightOrLeft = Vector3.Dot(obstacle.transform.position - transform.position, Vector2.right);
+        // obstacle is in front of object
+        if (isForwardOrBehind > 0.7)
         {
-           // boxBody.mass = 10.0f;
+
+            Debug.Log("RIGHT OR LEFT " + rightOrLeft);
+            return "up";
         }
-        if (collision.collider.tag == "wall")
+        else if (isForwardOrBehind < -0.7)
         {
-            
+            return "down";
         }
-        if (collision.collider.tag == "talon")
+        // object is to the left of object, and within it's radius
+        else if (rightOrLeft < -0.8)
         {
-           
+            return "left";
         }
+        // object is to the left of object, and within it's radius
+        else if (rightOrLeft > 0.8)
+        {
+            return "right";
+        }
+
+
+        return "Nothing";
     }
 
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "player")
+        {
+            touchingPlayer = true;
+        }
+        if (collision.gameObject.tag != "player")
+        {
+            Vector2 position = new Vector2(transform.position.x, transform.position.y);
+            Vector2 collisionPos = new Vector2(collision.transform.position.x, collision.transform.position.y);
+            Vector2 distance = position - collisionPos;
+            Vector2 collDir = collision.gameObject.GetComponent<Transform>().position;
+            //Debug.Log(CheckWhere(collision.gameObject));
+
+            Vector2 velocity = GetComponent<Rigidbody2D>().velocity;
+            Debug.Log(velocity);
+
+            switch (CheckWhere(collision.gameObject))
+            {
+                case "right":
+                case "left":
+                    Debug.Log("STopping in X");
+                    velocity.x = -velocity.x;
+                    transform.position = new Vector2(transform.position.x + velocity.x/10, transform.position.y);
+                    break;
+                case "up":
+                case "down":
+                    velocity.y = -velocity.y;
+                    transform.position = new Vector2(transform.position.x, transform.position.y + velocity.y/ 10);
+                    Debug.Log("STopping in Y");
+                    break;
+                default:
+                    break;
+            }
+
+            if (!touchingPlayer)
+            {
+                GetComponent<Rigidbody2D>().mass = 100000;
+            }
+            if (touchingPlayer)
+            {
+                GetComponent<Rigidbody2D>().mass = 0;
+            }
+        }
+    }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.collider.tag == "box")
+        if (collision.gameObject.tag == "player")
         {
-           // boxBody.mass = 0.01f;
+            touchingPlayer = false;
         }
-        if (collision.collider.tag == "talon")
-        {
-
-        }
+        GetComponent<Rigidbody2D>().mass = 0;
     }
-
 }
