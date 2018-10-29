@@ -24,7 +24,6 @@ public class Box : MonoBehaviour
         Constrain();
         //transform.position = position;
         //velocity = new Vector2(0, 0);
-    }
 
         velocity = boxBody.velocity;
 

@@ -1,34 +1,8 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
 guid: c7762ed38cfbcce45a767d9eb5d1a54e
-TextureImporter:
-  fileIDToRecycleName: {}
-=======
-<<<<<<< HEAD
-guid: bedc1327c3c8f914e97f180bef56d049
-TextureImporter:
-  fileIDToRecycleName: {}
-=======
-guid: 8368338877d971c44a087b705ea60cee
 TextureImporter:
   fileIDToRecycleName:
     21300000: bhood-0006_0
->>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
->>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
-=======
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-guid: bedc1327c3c8f914e97f180bef56d049
-=======
-guid: 0c20b66de4b193d49ad50fa91884e3f5
->>>>>>> Stashed changes
-=======
-guid: 3bbc547d34b290e40a42325cb1574bee
->>>>>>> Stashed changes
-TextureImporter:
-  fileIDToRecycleName: {}
->>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -58,69 +32,21 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-    filterMode: -1
-=======
-<<<<<<< HEAD
-    filterMode: -1
-=======
     filterMode: 0
->>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
->>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
-=======
-    filterMode: -1
->>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
     aniso: -1
     mipBias: -100
     wrapU: 1
     wrapV: 1
-<<<<<<< HEAD
-    wrapW: 1
-  nPOTScale: 0
-  lightmap: 0
-  compressionQuality: 50
-<<<<<<< HEAD
-  spriteMode: 1
-=======
-<<<<<<< HEAD
-  spriteMode: 1
-=======
-  spriteMode: 2
->>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
->>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
-=======
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     wrapW: -1
-=======
-    wrapW: 1
->>>>>>> Stashed changes
-=======
-    wrapW: 1
->>>>>>> Stashed changes
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
->>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  spritePixelsToUnits: 100
-=======
-<<<<<<< HEAD
-  spritePixelsToUnits: 100
-=======
-  spritePixelsToUnits: 200
->>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
->>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
-=======
-  spritePixelsToUnits: 100
->>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -144,29 +70,6 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
-  spriteSheet:
-    serializedVersion: 2
-    sprites: []
-    outline: []
-    physicsShape: []
-    bones: []
-<<<<<<< HEAD
-    spriteID: d53f6ae9f4f8c0d449d30ffe2a67d44c
-=======
-    spriteID: c4790411151128448971d38bd39b702f
-=======
-=======
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
->>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
->>>>>>> sam
   - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -189,7 +92,6 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-<<<<<<< HEAD
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -208,7 +110,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b84bcadc206f484897d56323bfd76ae
+      spriteID: 88d761579f147a6429a3c0f9986899b5
       vertices: []
       indices: 
       edges: []
@@ -216,33 +118,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e5beaaf2a5b1d5f4e875ed9a379f399a
->>>>>>> aa0a14015c035056596968dd938a84ca5dd30820
->>>>>>> 949da053e37703b95a2f837285a831cb9a6331c0
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-  spriteSheet:
-    serializedVersion: 2
-    sprites: []
-    outline: []
-    physicsShape: []
-    bones: []
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    spriteID: 
-=======
-    spriteID: 5742517bedc553541a01e46a0ead78b7
->>>>>>> Stashed changes
-<<<<<<< HEAD
-=======
-    spriteID: 9854c55ecc8fd6446be50862d4653daf
->>>>>>> Stashed changes
-=======
->>>>>>> 560c61a733fd163d718a754e37fd1b44748a6192
->>>>>>> sam
+    spriteID: 45be352daf2e4264588b002f0d457769
     vertices: []
     indices: 
     edges: []
