@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Move: MonoBehaviour {
 
@@ -8,10 +9,11 @@ public class Move: MonoBehaviour {
     public Animator animator;
     public Rigidbody2D playerBody;
     public Vector3 moveVector = Vector3.zero;
+    private Scene loadedLevel;
     // Use this for initialization
     void Start () {
-		
-	}
+        loadedLevel = SceneManager.GetActiveScene();
+    }
 	
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -19,6 +21,7 @@ public class Move: MonoBehaviour {
         animator.SetFloat("xSpeed", Mathf.Abs(moveVector.x));
         animator.SetFloat("ySpeed", moveVector.y);
         //Debug.Log(Mathf.Abs(moveVector.x));
+        ResetLevel();
     }
 
     public void MovementInput()
@@ -48,5 +51,13 @@ public class Move: MonoBehaviour {
         moveVector = moveVector.normalized * moveRate;
 
         playerBody.velocity = moveVector;
+    }
+
+    public void ResetLevel()
+    {
+        if (Input.GetKeyDown("r"))
+        {
+            SceneManager.LoadScene(loadedLevel.buildIndex);
+        }
     }
 }
