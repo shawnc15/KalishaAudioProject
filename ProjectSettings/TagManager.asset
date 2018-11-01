@@ -11,6 +11,7 @@ TagManager:
   - box
   - wall
   - talon
+  - sand
   layers:
   - Default
   - TransparentFX
