@@ -10,9 +10,11 @@ public class Move: MonoBehaviour {
     public Rigidbody2D playerBody;
     public Vector3 moveVector = Vector3.zero;
     private Scene loadedLevel;
+    private bool slow;
     // Use this for initialization
     void Start () {
         loadedLevel = SceneManager.GetActiveScene();
+        slow = false;
     }
 	
 	// Update is called once per frame
@@ -22,6 +24,7 @@ public class Move: MonoBehaviour {
         animator.SetFloat("ySpeed", moveVector.y);
         //Debug.Log(Mathf.Abs(moveVector.x));
         ResetLevel();
+        Debug.Log(slow);
     }
 
     public void MovementInput()
@@ -50,7 +53,10 @@ public class Move: MonoBehaviour {
 
         moveVector = moveVector.normalized * moveRate;
 
-        playerBody.velocity = moveVector;
+        if (slow)
+            playerBody.velocity = (moveVector) / 2.0f;
+        else
+            playerBody.velocity = moveVector;
     }
 
     public void ResetLevel()
@@ -59,5 +65,23 @@ public class Move: MonoBehaviour {
         {
             SceneManager.LoadScene(loadedLevel.buildIndex);
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "sand")
+        {
+            slow = true;
+        }
+      
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "sand")
+        {
+            slow = false;
+        }
+
     }
 }
