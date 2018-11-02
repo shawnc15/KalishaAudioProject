@@ -11,10 +11,12 @@ public class Move: MonoBehaviour {
     public Vector3 moveVector = Vector3.zero;
     private Scene loadedLevel;
     private bool slow;
+    private bool pause;
     // Use this for initialization
     void Start () {
         loadedLevel = SceneManager.GetActiveScene();
         slow = false;
+        pause = false;
     }
 	
 	// Update is called once per frame
@@ -23,8 +25,7 @@ public class Move: MonoBehaviour {
         animator.SetFloat("xSpeed", Mathf.Abs(moveVector.x));
         animator.SetFloat("ySpeed", moveVector.y);
         //Debug.Log(Mathf.Abs(moveVector.x));
-        ResetLevel();
-        Debug.Log(slow);
+        HotKeys();
     }
 
     public void MovementInput()
@@ -59,11 +60,24 @@ public class Move: MonoBehaviour {
             playerBody.velocity = moveVector;
     }
 
-    public void ResetLevel()
+    public void HotKeys()
     {
         if (Input.GetKeyDown("r"))
         {
             SceneManager.LoadScene(loadedLevel.buildIndex);
+        }
+        if (Input.GetKeyDown("escape"))
+        {
+            Application.Quit();
+        }
+        if (Input.GetKeyDown("p"))
+        {
+            pause = !pause;
+            Debug.Log(pause);
+            if (pause)
+                Time.timeScale = 0;
+            else
+                Time.timeScale = 1;
         }
     }
 

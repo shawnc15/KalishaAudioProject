@@ -54,8 +54,6 @@ public class Box : MonoBehaviour
         // obstacle is in front of object
         if (isForwardOrBehind > 0.7)
         {
-
-            Debug.Log("RIGHT OR LEFT " + rightOrLeft);
             return "up";
         }
         else if (isForwardOrBehind < -0.7)
@@ -89,16 +87,13 @@ public class Box : MonoBehaviour
             Vector2 collisionPos = new Vector2(collision.transform.position.x, collision.transform.position.y);
             Vector2 distance = position - collisionPos;
             Vector2 collDir = collision.gameObject.GetComponent<Transform>().position;
-            //Debug.Log(CheckWhere(collision.gameObject));
 
             Vector2 velocity = GetComponent<Rigidbody2D>().velocity;
-            Debug.Log(velocity);
 
             switch (CheckWhere(collision.gameObject))
             {
                 case "right":
                 case "left":
-                    Debug.Log("STopping in X");
                     velocity.x = -velocity.x;
                     transform.position = new Vector2(transform.position.x + velocity.x/10, transform.position.y);
                     break;
@@ -106,7 +101,6 @@ public class Box : MonoBehaviour
                 case "down":
                     velocity.y = -velocity.y;
                     transform.position = new Vector2(transform.position.x, transform.position.y + velocity.y/ 10);
-                    Debug.Log("STopping in Y");
                     break;
                 default:
                     break;
