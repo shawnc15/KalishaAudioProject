@@ -24,7 +24,6 @@ public class Move: MonoBehaviour {
         MovementInput();
         animator.SetFloat("xSpeed", Mathf.Abs(moveVector.x));
         animator.SetFloat("ySpeed", moveVector.y);
-        //Debug.Log(Mathf.Abs(moveVector.x));
         HotKeys();
     }
 
@@ -69,15 +68,6 @@ public class Move: MonoBehaviour {
         if (Input.GetKeyDown("escape"))
         {
             Application.Quit();
-        }
-        if (Input.GetKeyDown("p"))
-        {
-            pause = !pause;
-            Debug.Log(pause);
-            if (pause)
-                Time.timeScale = 0;
-            else
-                Time.timeScale = 1;
         }
     }
 
