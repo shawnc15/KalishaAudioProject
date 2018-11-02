@@ -28550,11 +28550,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4075824538615254, guid: 7a832fe0993b0a24484df71c788d2381, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.026
+      value: -0.051
       objectReference: {fileID: 0}
     - target: {fileID: 4075824538615254, guid: 7a832fe0993b0a24484df71c788d2381, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -9.585
+      value: -10.468
       objectReference: {fileID: 0}
     - target: {fileID: 4075824538615254, guid: 7a832fe0993b0a24484df71c788d2381, type: 2}
       propertyPath: m_LocalPosition.z
@@ -28582,7 +28582,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1843663940980892, guid: 7a832fe0993b0a24484df71c788d2381, type: 2}
       propertyPath: m_Name
-      value: Barrier (1)
+      value: Barrier
+      objectReference: {fileID: 0}
+    - target: {fileID: 212180978751886246, guid: 7a832fe0993b0a24484df71c788d2381,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 61741421029149284, guid: 7a832fe0993b0a24484df71c788d2381, type: 2}
