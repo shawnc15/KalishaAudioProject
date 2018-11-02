@@ -18,11 +18,13 @@ public class TalonScript : MonoBehaviour {
     {
         loadedLevel = SceneManager.GetActiveScene();
         birdBody = this.GetComponent<Rigidbody2D>();
+        target = GameObject.FindGameObjectWithTag("player");
     }
 
     // Update is called once per frame
     void Update ()
     {
+        Rotate();
         Seek();
 	}
 
@@ -31,6 +33,14 @@ public class TalonScript : MonoBehaviour {
         velocity = new Vector2((target.transform.position.x - transform.position.x), (target.transform.position.y - transform.position.y ));
         moveVector = velocity.normalized * speed;
         birdBody.velocity = moveVector;
+        
+    }
+
+    void Rotate()
+    {
+        Vector3 toTarget = target.transform.position - transform.position;
+        float angle = Mathf.Atan2(toTarget.y, toTarget.x) * Mathf.Rad2Deg + 90;
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

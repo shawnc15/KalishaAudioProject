@@ -44,7 +44,7 @@ public class Shards : MonoBehaviour
             foreach (GameObject barrier in GameObject.FindGameObjectsWithTag("barrier"))
             {
                 barrier.GetComponent<Renderer>().enabled = false;
-                barrier.GetComponent<BoxCollider2D>().enabled = false;
+                barrier.GetComponent<CircleCollider2D>().enabled = false;
             }
         }
 
