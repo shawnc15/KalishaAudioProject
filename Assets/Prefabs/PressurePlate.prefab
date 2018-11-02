@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4994423112467448}
   - component: {fileID: 212192939247720622}
   - component: {fileID: 58339127589613598}
-  - component: {fileID: 114373956275542654}
+  - component: {fileID: 114434396716630130}
   m_Layer: 0
   m_Name: PressurePlate
   m_TagString: Untagged
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1021309653436302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.5909843, y: -3.5192153, z: 0}
+  m_LocalPosition: {x: -4.045548, y: -6.7400484, z: 0}
   m_LocalScale: {x: 0.55352, y: 0.55352, z: 0.55352}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,8 +56,8 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.03439263, y: 0}
   serializedVersion: 2
-  m_Radius: 0.8436426
---- !u!114 &114373956275542654
+  m_Radius: 0.7
+--- !u!114 &114434396716630130
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -65,11 +65,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1021309653436302}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50ce9ee1043cd814c876e2d2e98873d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e0b36a4abc16a345a9abf1162fc4546, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walls:
-  - {fileID: 0}
+  walls: []
 --- !u!212 &212192939247720622
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -106,7 +105,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ad857934d71702b44a54c189f5c784e8, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6509804, g: 0.41568628, b: 0.41960785, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
