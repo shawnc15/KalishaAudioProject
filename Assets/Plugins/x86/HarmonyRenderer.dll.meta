@@ -1,6 +1,7 @@
 fileFormatVersion: 2
 guid: e59b0b052bb53453dae84214d89c3f71
 PluginImporter:
+<<<<<<< Updated upstream
   externalObjects: {}
   serializedVersion: 2
   iconMap: {}
@@ -34,11 +35,27 @@ PluginImporter:
   - first:
       Editor: Editor
     second:
+=======
+  serializedVersion: 1
+  iconMap: {}
+  executionOrder: {}
+  isPreloaded: 0
+  platformData:
+    Android:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+    Any:
+      enabled: 0
+      settings: {}
+    Editor:
+>>>>>>> Stashed changes
       enabled: 1
       settings:
         CPU: x86
         DefaultValueInitialized: true
         OS: Windows
+<<<<<<< Updated upstream
   - first:
       Facebook: Win
     second:
@@ -90,6 +107,41 @@ PluginImporter:
   - first:
       iPhone: iOS
     second:
+=======
+    Linux:
+      enabled: 0 
+      settings:
+        CPU: x86
+    Linux64:
+      enabled: 0 
+      settings:
+        CPU: None
+    LinuxUniversal:
+      enabled: 0 
+      settings:
+        CPU: x86
+    OSXIntel:
+      enabled: 0 
+      settings:
+        CPU: AnyCPU
+    OSXIntel64:
+      enabled: 0 
+      settings:
+        CPU: None
+    OSXUniversal:
+      enabled: 0 
+      settings:
+        CPU: x86
+    Win:
+      enabled: 1 
+      settings:
+        CPU: AnyCPU
+    Win64:
+      enabled: 1
+      settings:
+        CPU: None
+    iOS:
+>>>>>>> Stashed changes
       enabled: 0
       settings:
         CompileFlags: 
