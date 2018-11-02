@@ -11,7 +11,7 @@ PluginImporter:
   - first:
       '': OSXIntel
     second:
-      enabled: 0
+      enabled: 1
       settings:
         CPU: AnyCPU
   - first:
@@ -21,24 +21,17 @@ PluginImporter:
       settings:
         CPU: None
   - first:
-      Android: Android
-    second:
-      enabled: 0
-      settings:
-        CPU: AnyCPU
-  - first:
       Any: 
     second:
-      enabled: 0
+      enabled: 1
       settings: {}
   - first:
       Editor: Editor
     second:
-      enabled: 1
+      enabled: 0
       settings:
         CPU: x86
         DefaultValueInitialized: true
-        OS: Windows
   - first:
       Facebook: Win
     second:
@@ -48,13 +41,13 @@ PluginImporter:
   - first:
       Facebook: Win64
     second:
-      enabled: 1
+      enabled: 0
       settings:
         CPU: None
   - first:
       Standalone: Linux
     second:
-      enabled: 0
+      enabled: 1
       settings:
         CPU: x86
   - first:
@@ -66,7 +59,7 @@ PluginImporter:
   - first:
       Standalone: LinuxUniversal
     second:
-      enabled: 0
+      enabled: 1
       settings:
         CPU: x86
   - first:
@@ -84,16 +77,9 @@ PluginImporter:
   - first:
       Standalone: Win64
     second:
-      enabled: 1
-      settings:
-        CPU: AnyCPU
-  - first:
-      iPhone: iOS
-    second:
       enabled: 0
       settings:
-        CompileFlags: 
-        FrameworkDependencies: 
+        CPU: None
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -12,6 +12,7 @@ TagManager:
   - wall
   - talon
   - sand
+  - removable
   layers:
   - Default
   - TransparentFX
