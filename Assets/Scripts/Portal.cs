@@ -8,14 +8,7 @@ public class Portal : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
-     
-
         //Move the position of the object.
         collision.gameObject.transform.position = portPosition.transform.position;
-
-
-
-        
     }
 }

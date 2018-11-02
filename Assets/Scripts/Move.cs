@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Move: MonoBehaviour {
 
@@ -8,17 +9,22 @@ public class Move: MonoBehaviour {
     public Animator animator;
     public Rigidbody2D playerBody;
     public Vector3 moveVector = Vector3.zero;
+    private Scene loadedLevel;
+    private bool slow;
+    private bool pause;
     // Use this for initialization
     void Start () {
-		
-	}
+        loadedLevel = SceneManager.GetActiveScene();
+        slow = false;
+        pause = false;
+    }
 	
 	// Update is called once per frame
 	void FixedUpdate () {
         MovementInput();
         animator.SetFloat("xSpeed", Mathf.Abs(moveVector.x));
         animator.SetFloat("ySpeed", moveVector.y);
-        //Debug.Log(Mathf.Abs(moveVector.x));
+        HotKeys();
     }
 
     public void MovementInput()
@@ -47,6 +53,39 @@ public class Move: MonoBehaviour {
 
         moveVector = moveVector.normalized * moveRate;
 
-        playerBody.velocity = moveVector;
+        if (slow)
+            playerBody.velocity = (moveVector) / 2.0f;
+        else
+            playerBody.velocity = moveVector;
+    }
+
+    public void HotKeys()
+    {
+        if (Input.GetKeyDown("r"))
+        {
+            SceneManager.LoadScene(loadedLevel.buildIndex);
+        }
+        if (Input.GetKeyDown("escape"))
+        {
+            Application.Quit();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "sand")
+        {
+            slow = true;
+        }
+      
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "sand")
+        {
+            slow = false;
+        }
+
     }
 }
