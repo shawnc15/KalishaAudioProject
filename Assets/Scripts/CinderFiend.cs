@@ -72,7 +72,6 @@ public class CinderFiend : MonoBehaviour
     IEnumerator Wait()
     {
         yield return new WaitForSeconds(2);
-        Debug.Log("boom");
         boom = true;
         fiendCollider.size = ExplosionSize;
     }
