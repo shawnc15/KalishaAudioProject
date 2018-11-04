@@ -12,7 +12,7 @@ public class Horrorhound : MonoBehaviour {
     public Vector3 acceleration;
     private float accelRate;
     public float maxSpeed;
-    private Vector3 direction;
+    public Vector3 direction;
     private Vector3 start;
     private Vector3 end;
     private Transform[] path;
@@ -20,6 +20,9 @@ public class Horrorhound : MonoBehaviour {
     private Scene loadedLevel;
     public GameObject g_player;
     private int waitTimer;
+    private bool sideways;
+    private bool up;
+    private bool down;
 
     // Use this for initialization
     void Start () {
@@ -44,8 +47,11 @@ public class Horrorhound : MonoBehaviour {
         SetDirection();
         Move();
         CheckPosition();
-        animator.SetFloat("xSpeed", Mathf.Abs(velocity.x));
-        animator.SetFloat("ySpeed", velocity.y);
+        animator.SetFloat("xSpeed", Mathf.Abs(direction.x));
+        animator.SetFloat("ySpeed", direction.y);
+        //animator.SetBool("up", up);
+        //animator.SetBool("down", down);
+        //animator.SetBool("sideways", sideways);
         if(velocity.x > 0)
         {
             GetComponent<SpriteRenderer>().flipX = false;
@@ -84,6 +90,8 @@ public class Horrorhound : MonoBehaviour {
     void SetDirection()
     {
         direction = (end - position).normalized;
+        direction.x = Mathf.Round(direction.x);
+        direction.y = Mathf.Round(direction.y);
     }
 
     void Move()
