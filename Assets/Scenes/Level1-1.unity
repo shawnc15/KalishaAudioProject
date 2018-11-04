@@ -24029,26 +24029,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 224351102410514946, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114154563683854192, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: m_Text
-      value: Continue
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854799822730840, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: m_Text
-      value: Return to Menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 114401312671437216, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: m_Text
-      value: Quit
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
   m_IsPrefabAsset: 0
