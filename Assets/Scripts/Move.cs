@@ -77,7 +77,11 @@ public class Move: MonoBehaviour {
         {
             slow = true;
         }
-      
+
+        if (collision.gameObject.tag == "shard")
+        {
+            GetComponent<AudioSource>().Play();
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
