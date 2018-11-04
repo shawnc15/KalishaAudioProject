@@ -14,6 +14,7 @@ TagManager:
   - sand
   - removable
   - hound
+  - pause
   layers:
   - Default
   - TransparentFX
