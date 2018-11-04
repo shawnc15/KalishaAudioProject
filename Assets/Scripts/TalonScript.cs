@@ -33,7 +33,6 @@ public class TalonScript : MonoBehaviour {
         velocity = new Vector2((target.transform.position.x - transform.position.x), (target.transform.position.y - transform.position.y ));
         moveVector = velocity.normalized * speed;
         birdBody.velocity = moveVector;
-        
     }
 
     void Rotate()
