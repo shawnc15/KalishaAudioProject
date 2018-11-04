@@ -15,6 +15,7 @@ TagManager:
   - removable
   - hound
   - pause
+  - manager
   layers:
   - Default
   - TransparentFX

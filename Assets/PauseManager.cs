@@ -5,13 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class PauseManager : MonoBehaviour {
 
-    private GameObject[] gameObjects;
+    public GameObject[] gameObjects;
+    GameObject[] bullets;
     bool isPaused;
 
 	// Use this for initialization
 	void Start () {
-        gameObjects = UnityEngine.GameObject.FindObjectsOfType<GameObject>();
+        gameObjects = FindObjectsOfType<GameObject>();
         isPaused = false;
+        foreach (var item in gameObjects)
+        {
+            if (item.tag == "pause")
+            {
+                item.SetActive(false);
+            }
+        }
     }
 	
 	// Update is called once per frame
@@ -25,16 +33,21 @@ public class PauseManager : MonoBehaviour {
 
     public void Pause()
     {
+        bullets = GameObject.FindGameObjectsWithTag("bullet");
         foreach (var item in gameObjects)
         {
             if (item.tag == "pause")
             {
                 item.SetActive(true);
             }
-            else if (item.tag != "manager")
+            else if (item.tag != "manager" && item.tag != "MainCamera")
             {
                 item.SetActive(false);
             }
+        }
+        foreach (var item in bullets)
+        {
+            item.SetActive(false);
         }
         isPaused = true;
     }
@@ -44,14 +57,18 @@ public class PauseManager : MonoBehaviour {
         {
             if (item.tag == "pause")
             {
-                item.SetActive(true);
-            }
-            else if (item.tag != "manager")
-            {
                 item.SetActive(false);
             }
+            else if (item.tag != "manager" && item.tag != "MainCamera" || item.tag == "Untagged")
+            {
+                item.SetActive(true);
+            }
         }
-        isPaused = true;
+        foreach (var item in bullets)
+        {
+            item.SetActive(false);
+        }
+        isPaused = false;
     }
 
     public void QuitApp()

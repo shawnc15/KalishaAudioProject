@@ -190,20 +190,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1681381826
+--- !u!1001 &1327415041
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 224351102410514946, guid: 0467c74e029d12a44938f3088bd26a61,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4134453721961582, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.2976031
+      value: 1209.6245
       objectReference: {fileID: 0}
     - target: {fileID: 4134453721961582, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.22162247
+      value: 363.66504
       objectReference: {fileID: 0}
     - target: {fileID: 4134453721961582, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
       propertyPath: m_LocalPosition.z
@@ -229,55 +234,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114154563683854192, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 32
-      objectReference: {fileID: 0}
-    - target: {fileID: 114154563683854192, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: m_FontData.m_MinSize
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854799822730840, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 32
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854799822730840, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: m_FontData.m_MinSize
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114401312671437216, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 32
-      objectReference: {fileID: 0}
-    - target: {fileID: 114401312671437216, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: m_FontData.m_MinSize
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114401312671437216, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: m_Text
-      value: Quit
-      objectReference: {fileID: 0}
-    - target: {fileID: 224351102410514946, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854799822730840, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: m_Text
-      value: Return To Menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 114154563683854192, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: m_Text
-      value: Continue
+    - target: {fileID: 1305824297794624, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
+      propertyPath: m_Name
+      value: PauseManager (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}

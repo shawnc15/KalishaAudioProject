@@ -191,6 +191,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &5052643
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224351102410514946, guid: 0467c74e029d12a44938f3088bd26a61,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134453721961582, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 9.336168
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134453721961582, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.6928499
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134453721961582, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.021028563
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134453721961582, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134453721961582, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134453721961582, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134453721961582, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134453721961582, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &14819097
 Prefab:
   m_ObjectHideFlags: 0
@@ -2800,6 +2847,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   acceleration: {x: 0, y: 0, z: 0}
   maxSpeed: 0.05
+  direction: {x: 0, y: 0, z: 0}
   pathObjects:
   - {fileID: 1660492552}
   - {fileID: 2031434116}
@@ -7620,6 +7668,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   acceleration: {x: 0, y: 0, z: 0}
   maxSpeed: 0.05
+  direction: {x: 0, y: 0, z: 0}
   pathObjects:
   - {fileID: 2010038891}
   - {fileID: 1197869455}
@@ -9267,6 +9316,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   acceleration: {x: 0, y: 0, z: 0}
   maxSpeed: 0.03
+  direction: {x: 0, y: 0, z: 0}
   pathObjects:
   - {fileID: 1790351408}
   - {fileID: 2045860177}
