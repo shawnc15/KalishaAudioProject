@@ -16,6 +16,7 @@ TagManager:
   - hound
   - pause
   - manager
+  - bullet
   layers:
   - Default
   - TransparentFX
