@@ -12,9 +12,9 @@ public class CinderFiend : MonoBehaviour
     private float distance;
     private Scene loadedLevel;
     public Rigidbody2D fiendBody;
-    public BoxCollider2D fiendCollider;
+    public CircleCollider2D fiendCollider;
     private bool startExplode;
-    public Vector2 ExplosionSize;
+    public float ExplosionSize;
     public bool boom;
     Vector2 moveVector = Vector3.zero;
 
@@ -23,7 +23,7 @@ public class CinderFiend : MonoBehaviour
     {
         loadedLevel = SceneManager.GetActiveScene();
         fiendBody = this.GetComponent<Rigidbody2D>();
-        fiendCollider = this.GetComponent<BoxCollider2D>();
+        fiendCollider = this.GetComponent<CircleCollider2D>();
         target = GameObject.FindGameObjectWithTag("player");
         startExplode = false;
         boom = false;
@@ -39,8 +39,9 @@ public class CinderFiend : MonoBehaviour
         }
         else if (!boom && startExplode)
         {
+            velocity = new Vector2(0.0f, 0.0f);
             fiendBody.constraints = RigidbodyConstraints2D.FreezeRotation;
-            this.transform.localScale += new Vector3(0.01f, 0.01f, 0.0f);
+            this.transform.localScale += new Vector3(0.001f, 0.001f, 0.0f);
         }
 
         if (boom)
@@ -73,7 +74,7 @@ public class CinderFiend : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         boom = true;
-        fiendCollider.size = ExplosionSize;
+        fiendCollider.radius = ExplosionSize;
     }
 
     IEnumerator death()

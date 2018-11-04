@@ -6,16 +6,14 @@ public class Switch : MonoBehaviour {
 
     bool switchOn = false;
 
-    public Color activatedColor;
-
-    SpriteRenderer switchRenderer;
+    public List<GameObject> walls = new List<GameObject>();
 
     //List<string> collidingNames;
     int numCollisions;
 
     private void Start()
     {
-        switchRenderer = GetComponent<SpriteRenderer>();
+        
     }
 
     void ToggleEnable()
@@ -24,11 +22,21 @@ public class Switch : MonoBehaviour {
 
         if (switchOn)
         {
-            switchRenderer.color = Color.blue;
+            //switchRenderer.color = Color.blue;
+            for (int i = 0; i < walls.Count; i++)
+            {
+                walls[i].GetComponent<SpriteRenderer>().enabled = false;
+                walls[i].GetComponent<BoxCollider2D>().enabled = false;
+            }
         }
         else
         {
-            switchRenderer.color = Color.white;
+            //switchRenderer.color = Color.white;
+            for (int i = 0; i < walls.Count; i++)
+            {
+                walls[i].GetComponent<SpriteRenderer>().enabled = true;
+                walls[i].GetComponent<BoxCollider2D>().enabled = true;
+            }
         }
     }
 
