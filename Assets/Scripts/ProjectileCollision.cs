@@ -24,7 +24,6 @@ public class ProjectileCollision : MonoBehaviour {
         if(collision.collider.tag == "player")
         {
             this.gameObject.SetActive(false);
-            SceneManager.LoadScene(loadedLevel.buildIndex);
         }
 
         if(collision.collider.tag == "box")

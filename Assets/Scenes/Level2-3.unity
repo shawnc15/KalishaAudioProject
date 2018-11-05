@@ -3387,6 +3387,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e314c9fa4e47ac24f953d577e9cb76dd, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &588300949 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1101622100660250, guid: d9e53fa974f374e4f8a42696e1126f2d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1104638198}
 --- !u!4 &592031723 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4758708852750398, guid: e314c9fa4e47ac24f953d577e9cb76dd,
@@ -5634,6 +5639,11 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114191009448842670, guid: d9e53fa974f374e4f8a42696e1126f2d,
+        type: 2}
+      propertyPath: portal
+      value: 
+      objectReference: {fileID: 8300000, guid: 291a5885bc77d354e9ab647c0b456f89, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9e53fa974f374e4f8a42696e1126f2d, type: 2}
   m_IsPrefabAsset: 0
@@ -7792,6 +7802,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114232435452315090, guid: 6030dc8b8007a8646b81656aa7c3a5a1,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 588300949}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6030dc8b8007a8646b81656aa7c3a5a1, type: 2}
   m_IsPrefabAsset: 0
@@ -8169,7 +8184,7 @@ GameObject:
   - component: {fileID: 1824983553}
   m_Layer: 0
   m_Name: HorrorHound
-  m_TagString: Untagged
+  m_TagString: hound
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -2782,7 +2782,7 @@ GameObject:
   - component: {fileID: 357088823}
   m_Layer: 0
   m_Name: HorrorHound (1)
-  m_TagString: Untagged
+  m_TagString: hound
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7603,7 +7603,7 @@ GameObject:
   - component: {fileID: 1070346492}
   m_Layer: 0
   m_Name: HorrorHound (2)
-  m_TagString: Untagged
+  m_TagString: hound
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9251,7 +9251,7 @@ GameObject:
   - component: {fileID: 1256866293}
   m_Layer: 0
   m_Name: HorrorHound
-  m_TagString: Untagged
+  m_TagString: hound
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

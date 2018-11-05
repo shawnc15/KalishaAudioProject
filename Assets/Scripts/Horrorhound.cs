@@ -110,7 +110,7 @@ public class Horrorhound : MonoBehaviour {
     {
         if (collision.gameObject.tag == "player")
         {
-            SceneManager.LoadScene(loadedLevel.buildIndex);
+            //SceneManager.LoadScene(loadedLevel.buildIndex);
         }
         if (collision.gameObject.tag == "box")
         {
