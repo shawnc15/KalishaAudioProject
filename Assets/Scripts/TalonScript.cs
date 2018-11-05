@@ -46,7 +46,7 @@ public class TalonScript : MonoBehaviour {
     {
         if (collision.gameObject.tag == "player")
         {
-            SceneManager.LoadScene(loadedLevel.buildIndex);
+
         }
         if (collision.gameObject.tag == "box")
         {

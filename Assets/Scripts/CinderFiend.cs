@@ -17,6 +17,7 @@ public class CinderFiend : MonoBehaviour
     public float ExplosionSize;
     public bool boom;
     Vector2 moveVector = Vector3.zero;
+    public GameObject player;
 
     // Use this for initialization
     void Start()
@@ -80,6 +81,8 @@ public class CinderFiend : MonoBehaviour
     IEnumerator death()
     {
         yield return new WaitForSeconds(1);
+        player.GetComponent<AudioSource>().clip = player.GetComponent<Move>().death;
+        player.GetComponent<AudioSource>().Play();
         Destroy(gameObject);
     }
 
@@ -92,6 +95,7 @@ public class CinderFiend : MonoBehaviour
             if (boom)
             {
                 SceneManager.LoadScene(loadedLevel.buildIndex);
+                
             }
 
         }

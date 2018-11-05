@@ -17,6 +17,8 @@ TagManager:
   - pause
   - manager
   - bullet
+  - cinder
+  - brine
   layers:
   - Default
   - TransparentFX

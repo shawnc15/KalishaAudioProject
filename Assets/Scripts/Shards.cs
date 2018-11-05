@@ -9,6 +9,7 @@ public class Shards : MonoBehaviour
     public bool complete;
     public int numCollected;
     public List<GameObject> barriers;
+    private bool playOnce;
     // Use this for initialization
     void Start()
     {
@@ -22,6 +23,7 @@ public class Shards : MonoBehaviour
         }
         complete = false;
         numCollected = 0;
+        playOnce = false;
     }
 
     // Update is called once per frame
@@ -45,7 +47,20 @@ public class Shards : MonoBehaviour
             {
                 barrier.GetComponent<Renderer>().enabled = false;
                 barrier.GetComponent<CircleCollider2D>().enabled = false;
+
+                
             }
+            if (!GetComponent<AudioSource>().isPlaying)
+            {
+                if (!playOnce)
+                {
+                    GetComponent<AudioSource>().clip = GetComponent<Move>().portal;
+                    GetComponent<AudioSource>().Play();
+                    playOnce = true;
+                }
+            }
+            
+            
         }
 
     }

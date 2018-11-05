@@ -34,7 +34,7 @@ public class Instructions : MonoBehaviour {
             position.y = 81.5f;
             GetComponent<RectTransform>().position = position;
             //GetComponent<RectTransform>().sizeDelta = new Vector2(550, 500);
-            GetComponentInChildren<Text>().text = "Back";
+            quitButton.GetComponentInChildren<Text>().text = "Back";
             inInstructions = true;
         }
         else

@@ -12,11 +12,19 @@ public class Move: MonoBehaviour {
     private Scene loadedLevel;
     private bool slow;
     private bool pause;
+    public AudioClip pickup;
+    public AudioClip death;
+    public AudioClip portal;
+
+    public bool dying;
+
+
     // Use this for initialization
     void Start () {
         loadedLevel = SceneManager.GetActiveScene();
         slow = false;
         pause = false;
+        dying = false;
     }
 	
 	// Update is called once per frame
@@ -25,6 +33,13 @@ public class Move: MonoBehaviour {
         animator.SetFloat("xSpeed", Mathf.Abs(moveVector.x));
         animator.SetFloat("ySpeed", moveVector.y);
         HotKeys();
+        if (dying)
+        {
+            if (!GetComponent<AudioSource>().isPlaying)
+            {
+                SceneManager.LoadScene(loadedLevel.buildIndex);
+            }
+        }
     }
 
     public void MovementInput()
@@ -77,7 +92,25 @@ public class Move: MonoBehaviour {
         {
             slow = true;
         }
+
+        if (collision.gameObject.tag == "shard")
+        {
       
+            GetComponent<AudioSource>().clip = pickup;
+            GetComponent<AudioSource>().Play();
+        }
+       
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "hound" || collision.gameObject.tag == "talon" || collision.gameObject.tag == "bullet")
+        {
+            GetComponent<AudioSource>().clip = death;
+            GetComponent<AudioSource>().Play();
+            dying = true;
+            this.GetComponent<Transform>().transform.Translate(new Vector3(0.0f,0.0f,-100.0f));
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
