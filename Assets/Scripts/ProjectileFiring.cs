@@ -69,7 +69,7 @@ public class ProjectileFiring : MonoBehaviour {
                 default:
                     break;
             }
-            g_placeholderProjectile.GetComponent<SpriteRenderer>().sortingOrder = 1;
+            g_placeholderProjectile.GetComponent<SpriteRenderer>().sortingOrder = 10;
             l_projectiles.Add(g_placeholderProjectile);
             
         }
