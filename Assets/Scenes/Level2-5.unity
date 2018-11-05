@@ -1566,6 +1566,11 @@ Prefab:
       propertyPath: m_Name
       value: Cinderfiend (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114232435452315090, guid: 6030dc8b8007a8646b81656aa7c3a5a1,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1024773475}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6030dc8b8007a8646b81656aa7c3a5a1, type: 2}
   m_IsPrefabAsset: 0
@@ -5127,6 +5132,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9e53fa974f374e4f8a42696e1126f2d, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1024773475 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1101622100660250, guid: d9e53fa974f374e4f8a42696e1126f2d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1024773474}
 --- !u!1001 &1028469154
 Prefab:
   m_ObjectHideFlags: 0
@@ -5580,6 +5590,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 81209319814796664, guid: 0467c74e029d12a44938f3088bd26a61,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
   m_IsPrefabAsset: 0
@@ -5787,7 +5802,7 @@ Prefab:
     - target: {fileID: 114833793563808920, guid: ef834ed83189eda46b0e1ad5118b02aa,
         type: 2}
       propertyPath: levelName
-      value: Title
+      value: Final_Screen
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef834ed83189eda46b0e1ad5118b02aa, type: 2}
@@ -5979,6 +5994,11 @@ Prefab:
       propertyPath: m_Name
       value: Cinderfiend (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114232435452315090, guid: 6030dc8b8007a8646b81656aa7c3a5a1,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1024773475}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6030dc8b8007a8646b81656aa7c3a5a1, type: 2}
   m_IsPrefabAsset: 0
@@ -8807,6 +8827,11 @@ Prefab:
       propertyPath: m_Name
       value: Cinderfiend (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114232435452315090, guid: 6030dc8b8007a8646b81656aa7c3a5a1,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1024773475}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6030dc8b8007a8646b81656aa7c3a5a1, type: 2}
   m_IsPrefabAsset: 0
@@ -9447,6 +9472,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114232435452315090, guid: 6030dc8b8007a8646b81656aa7c3a5a1,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1024773475}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6030dc8b8007a8646b81656aa7c3a5a1, type: 2}
   m_IsPrefabAsset: 0
@@ -9854,7 +9884,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.009433985, g: 0.009433985, b: 0.009433985, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -9892,7 +9922,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2031882904}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3, z: -10}
+  m_LocalPosition: {x: -1.55, y: -3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
