@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TestLoad.unity
     guid: 3bb921fb2eb94a1458ff6324fc707b9a
   - enabled: 1
+    path: Assets/Scenes/SplashScreen2.unity
+    guid: e098851ad2cf3e340a2e68006f017de2
+  - enabled: 1
     path: Assets/Scenes/Level1-1.unity
     guid: 83ac206781b372144a2a16097223a8c9
   - enabled: 1
@@ -44,9 +47,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Title.unity
     guid: 22433a9c9aa9cd445b35abe8cfd52f5f
-  - enabled: 1
-    path: Assets/Scenes/SplashScreen2.unity
-    guid: e098851ad2cf3e340a2e68006f017de2
   - enabled: 1
     path: Assets/Scenes/Final_Screen.unity
     guid: d4faea3b831b9e844af584950b0a1ea4
