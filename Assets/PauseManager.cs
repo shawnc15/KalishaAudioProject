@@ -11,6 +11,7 @@ public class PauseManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        DontDestroyOnLoad(this);
         gameObjects = FindObjectsOfType<GameObject>();
         isPaused = false;
         foreach (var item in gameObjects)
