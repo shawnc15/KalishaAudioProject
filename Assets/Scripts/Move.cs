@@ -17,7 +17,7 @@ public class Move: MonoBehaviour {
     public AudioClip portal;
 
     public bool dying;
-
+ 
 
     // Use this for initialization
     void Start () {
@@ -106,10 +106,14 @@ public class Move: MonoBehaviour {
     {
         if (collision.gameObject.tag == "hound" || collision.gameObject.tag == "talon" || collision.gameObject.tag == "bullet")
         {
-            GetComponent<AudioSource>().clip = death;
-            GetComponent<AudioSource>().Play();
-            dying = true;
-            this.GetComponent<Transform>().transform.Translate(new Vector3(0.0f,0.0f,-100.0f));
+            if (!dying)
+            {
+                GetComponent<AudioSource>().clip = death;
+                GetComponent<AudioSource>().Play();
+                dying = true;
+                GetComponent<Transform>().transform.Translate(new Vector3(0.0f, 0.0f, -100.0f));
+            }
+            
         }
     }
 
