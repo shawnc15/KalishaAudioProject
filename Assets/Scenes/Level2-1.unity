@@ -25718,7 +25718,7 @@ Prefab:
     - target: {fileID: 114983178798961732, guid: d079c518bfe1bcf44a71559b47773fa3,
         type: 2}
       propertyPath: direction
-      value: up
+      value: down
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d079c518bfe1bcf44a71559b47773fa3, type: 2}

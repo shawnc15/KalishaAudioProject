@@ -33,7 +33,7 @@ public class ProjectileFiring : MonoBehaviour {
             case "up":
                 animator.SetBool("up", true);
                 animator.GetBool(1);
-                GetComponent<SpriteRenderer>().transform.rotation = Quaternion.Euler(transform.eulerAngles + new Vector3(0,0,90.0f));
+                GetComponent<SpriteRenderer>().transform.rotation = Quaternion.Euler(transform.eulerAngles + new Vector3(0,0, 90.0f));
                 break;
             case "down":
                 animator.SetBool("down", true);
@@ -52,6 +52,23 @@ public class ProjectileFiring : MonoBehaviour {
         {
             g_placeholderProjectile = Instantiate(projectilePrefab);
             g_placeholderProjectile.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+            switch (direction)
+            {
+                case "left":
+                    g_placeholderProjectile.GetComponent<SpriteRenderer>().flipX = true;
+                    break;
+                case "right":
+                    g_placeholderProjectile.GetComponent<SpriteRenderer>().flipX = false;
+                    break;
+                case "up":
+                    g_placeholderProjectile.GetComponent<SpriteRenderer>().transform.rotation = Quaternion.Euler(transform.eulerAngles + new Vector3(0, 0, 0.0f));
+                    break;
+                case "down":
+                    g_placeholderProjectile.GetComponent<SpriteRenderer>().transform.rotation = Quaternion.Euler(transform.eulerAngles + new Vector3(0, 0, 0.0f));
+                    break;
+                default:
+                    break;
+            }
             g_placeholderProjectile.GetComponent<SpriteRenderer>().sortingOrder = 1;
             l_projectiles.Add(g_placeholderProjectile);
             
@@ -95,7 +112,7 @@ public class ProjectileFiring : MonoBehaviour {
                     }
                     break;
                 case "up":
-                    l_projectiles[i].GetComponent<Transform>().Translate((Vector3.up * speed) * Time.deltaTime);
+                    l_projectiles[i].GetComponent<Transform>().Translate((Vector3.right * speed) * Time.deltaTime);
                     if (l_projectiles[i].GetComponent<SpriteRenderer>().bounds.center.y > 15)
                     {
                         GameObject.Destroy(l_projectiles[i]);
@@ -104,7 +121,7 @@ public class ProjectileFiring : MonoBehaviour {
                     }
                     break;
                 case "down":
-                    l_projectiles[i].GetComponent<Transform>().Translate((Vector3.down * speed) * Time.deltaTime);
+                    l_projectiles[i].GetComponent<Transform>().Translate((Vector3.right * speed) * Time.deltaTime);
                     if (l_projectiles[i].GetComponent<SpriteRenderer>().bounds.center.y < -15)
                     {
                         GameObject.Destroy(l_projectiles[i]);
