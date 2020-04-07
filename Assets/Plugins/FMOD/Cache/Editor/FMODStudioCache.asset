@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 114677803037835976}
+  - {fileID: 114924340446114268}
+  EditorEvents:
+  - {fileID: 114549922495824512}
+  - {fileID: 114389474424368044}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 114924340446114268}
+  StringsBanks:
+  - {fileID: 114677803037835976}
+  stringsBankWriteTime: 637218471026374321
+  cacheVersion: 3
+--- !u!114 &114389474424368044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/LevelTheme
+  m_EditorClassIdentifier: 
+  Path: event:/Music/LevelTheme
+  guid: 7a503ffe233656489d7040d85ec15fc8
+  Banks:
+  - {fileID: 114924340446114268}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 34285
+--- !u!114 &114454581143359064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/KalishaFMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637218460429266206
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &114549922495824512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/TitleTheme
+  m_EditorClassIdentifier: 
+  Path: event:/Music/TitleTheme
+  guid: 60761aafe7627a4db56ecf96e4d0e4c6
+  Banks:
+  - {fileID: 114924340446114268}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 30000
+--- !u!114 &114677803037835976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/KalishaFMOD/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637218471026374321
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 794
+  Exists: 1
+--- !u!114 &114924340446114268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/KalishaFMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637218471026085104
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
