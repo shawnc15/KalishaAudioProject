@@ -96,8 +96,8 @@ public class Move: MonoBehaviour {
         if (collision.gameObject.tag == "shard")
         {
       
-            GetComponent<AudioSource>().clip = pickup;
-            GetComponent<AudioSource>().Play();
+            //GetComponent<AudioSource>().clip = pickup;
+            //GetComponent<AudioSource>().Play();
         }
        
     }

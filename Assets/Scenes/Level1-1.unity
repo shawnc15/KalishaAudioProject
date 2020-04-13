@@ -4527,6 +4527,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &324283507 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1424101167816564, guid: ef834ed83189eda46b0e1ad5118b02aa,
+    type: 2}
+  m_PrefabInternal: {fileID: 1732901819}
+--- !u!114 &324283508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 324283507}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &330049560
 GameObject:
   m_ObjectHideFlags: 0
@@ -14734,7 +14761,7 @@ Prefab:
     - target: {fileID: 114042868562431016, guid: d9e53fa974f374e4f8a42696e1126f2d,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9e53fa974f374e4f8a42696e1126f2d, type: 2}
@@ -22710,6 +22737,11 @@ Prefab:
     - target: {fileID: 4351287527919884, guid: ef834ed83189eda46b0e1ad5118b02aa, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 82726014532259066, guid: ef834ed83189eda46b0e1ad5118b02aa,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef834ed83189eda46b0e1ad5118b02aa, type: 2}

@@ -55,7 +55,7 @@ public class Shards : MonoBehaviour
                 if (!playOnce)
                 {
                     GetComponent<AudioSource>().clip = GetComponent<Move>().portal;
-                    GetComponent<AudioSource>().Play();
+                    //GetComponent<AudioSource>().Play();
                     playOnce = true;
                 }
             }
