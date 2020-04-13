@@ -24086,46 +24086,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 224351102410514946, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 81209319814796664, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114324261954700670, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: Event
-      value: event:/Music/LevelTheme
-      objectReference: {fileID: 0}
-    - target: {fileID: 114324261954700670, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: OverrideMinDistance
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114324261954700670, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: OverrideMaxDistance
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 82993890287951814, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: BypassListenerEffects
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 82993890287951814, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114324261954700670, guid: 0467c74e029d12a44938f3088bd26a61,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
   m_IsPrefabAsset: 0

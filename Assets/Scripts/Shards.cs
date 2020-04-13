@@ -10,6 +10,7 @@ public class Shards : MonoBehaviour
     public int numCollected;
     public List<GameObject> barriers;
     private bool playOnce;
+    private GameObject bar;
     // Use this for initialization
     void Start()
     {
@@ -43,11 +44,12 @@ public class Shards : MonoBehaviour
         else
         {
             complete = true;
+            
             foreach (GameObject barrier in GameObject.FindGameObjectsWithTag("barrier"))
             {
                 barrier.GetComponent<Renderer>().enabled = false;
                 barrier.GetComponent<CircleCollider2D>().enabled = false;
-
+                bar = barrier;
                 
             }
             if (!GetComponent<AudioSource>().isPlaying)
@@ -55,6 +57,7 @@ public class Shards : MonoBehaviour
                 if (!playOnce)
                 {
                     GetComponent<AudioSource>().clip = GetComponent<Move>().portal;
+                    bar.GetComponent<FMODUnity.StudioEventEmitter>().Play();
                     //GetComponent<AudioSource>().Play();
                     playOnce = true;
                 }

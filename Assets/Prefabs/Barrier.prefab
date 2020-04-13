@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4075824538615254}
   - component: {fileID: 212180978751886246}
   - component: {fileID: 58741240692737482}
-  - component: {fileID: 114018537008929400}
+  - component: {fileID: 114700495698852848}
   m_Layer: 0
   m_Name: Barrier
   m_TagString: barrier
@@ -57,7 +57,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.525
---- !u!114 &114018537008929400
+--- !u!114 &114700495698852848
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70,7 +70,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionTag: 
   Event: event:/Level SFX/Portal Unlock
-  PlayEvent: 12
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0

@@ -9,12 +9,14 @@ public class Box : MonoBehaviour
     public bool collide;
     Rigidbody2D boxBody;
     bool touchingPlayer;
+    bool playOnce;
 
 
     // Use this for initialization
     void Start()
     {
         touchingPlayer = false;
+        playOnce = false;
         boxBody = GetComponent<Rigidbody2D>();
     }
 
@@ -80,6 +82,12 @@ public class Box : MonoBehaviour
         if(collision.gameObject.tag == "player")
         {
             touchingPlayer = true;
+            if(!playOnce)
+            {
+                GetComponent<FMODUnity.StudioEventEmitter>().Play();
+                playOnce = true;
+            }
+            
         }
         if (collision.gameObject.tag != "player")
         {
@@ -121,6 +129,11 @@ public class Box : MonoBehaviour
         if (collision.gameObject.tag == "player")
         {
             touchingPlayer = false;
+            if (playOnce)
+            {
+                GetComponent<FMODUnity.StudioEventEmitter>().Stop();
+                playOnce = false;
+            }
         }
         GetComponent<Rigidbody2D>().mass = 0;
     }
