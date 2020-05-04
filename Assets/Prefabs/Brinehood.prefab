@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 95670436442719158}
   m_Layer: 0
   m_Name: Brinehood
-  m_TagString: Untagged
+  m_TagString: brine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

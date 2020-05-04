@@ -11,6 +11,7 @@ public class Shards : MonoBehaviour
     public List<GameObject> barriers;
     private bool playOnce;
     private GameObject bar;
+    FMODUnity.StudioEventEmitter emitter;
     // Use this for initialization
     void Start()
     {
@@ -25,6 +26,8 @@ public class Shards : MonoBehaviour
         complete = false;
         numCollected = 0;
         playOnce = false;
+        emitter = GetComponent<FMODUnity.StudioEventEmitter>();
+        emitter.SetParameter("Collection Progress", numCollected);
     }
 
     // Update is called once per frame
@@ -37,6 +40,7 @@ public class Shards : MonoBehaviour
                 if (shardList[i] != null && shardList[i].GetComponent<MinorShard>().collected)
                 {
                     numCollected++;
+                    emitter.SetParameter("Collection Progress", numCollected);
                     Destroy(shardList[i]);
                 }
             }

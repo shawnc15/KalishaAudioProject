@@ -57,7 +57,7 @@
 			<destination>{25b14abc-b80c-47c4-ba95-940f0ab38f7a}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{09224f05-3f9a-40b2-acb6-c20014f3cf26}</destination>
+			<destination>{8478bb14-a3a7-4e68-8cae-d435811423b5}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{5926f9b0-3604-430f-abd3-27cf855f84f3}" />
@@ -96,6 +96,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{80a0859e-df1a-4a7d-b8b6-a3c232c022a0}">
+		<property name="volume">
+			<value>-5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{8d0bfb84-3f31-44ee-99ca-5b547c232d15}</destination>
 		</relationship>
@@ -122,7 +125,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{72e36028-d33e-492c-83f5-c924b925afcc}">
 		<property name="name">
-			<value>Audio 1</value>
+			<value>Push</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{a1246c06-b3e2-43e6-b908-1163d045b085}</destination>
@@ -167,7 +170,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{08377064-62f1-4218-9ccf-6c360556973b}">
 		<property name="name">
-			<value>Audio 2</value>
+			<value>Sand Scatter</value>
 		</property>
 		<relationship name="automators">
 			<destination>{c143c96e-3c13-41b6-8f7a-18332046842d}</destination>

@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 61154001176031502}
   - component: {fileID: 114379906807036902}
   - component: {fileID: 95630403406237322}
+  - component: {fileID: 114663016622407026}
+  - component: {fileID: 58569942254566904}
   m_Layer: 0
   m_Name: Dreadtalon
   m_TagString: talon
@@ -38,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1232576350961840}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4369094, y: 6.5032754, z: -1}
+  m_LocalPosition: {x: -4.05, y: 2.46, z: -1}
   m_LocalScale: {x: 0.23171574, y: 0.23171574, z: 0.23171574}
   m_Children: []
   m_Father: {fileID: 0}
@@ -64,6 +66,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!58 &58569942254566904
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1232576350961840}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.11847529}
+  serializedVersion: 2
+  m_Radius: 5.1664457
 --- !u!61 &61154001176031502
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -121,6 +138,28 @@ MonoBehaviour:
   target: {fileID: 0}
   speed: 2
   birdBody: {fileID: 0}
+--- !u!114 &114663016622407026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1232576350961840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: player
+  Event: event:/Enemy Barks/Dreadtalon Cry
+  PlayEvent: 5
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 1
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!212 &212049436999162376
 SpriteRenderer:
   m_ObjectHideFlags: 1

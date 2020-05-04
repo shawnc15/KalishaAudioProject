@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{bda4d9e3-813d-47cf-a29f-cee2c51a8a37}">
+		<property name="assetPath">
+			<value>Desert Ambience (Coyote).wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.6146258503401358</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2bbc2526-0703-4061-bed3-897eec908fa4}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{871470b6-e759-4fe0-af97-cfac5f84b402}">
+		<property name="name">
+			<value>Desert Progress</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5297762e-651b-445a-9d25-11d6828c2c53}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{a49bdf87-f948-438c-b0c7-277ee0272a7e}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{a49bdf87-f948-438c-b0c7-277ee0272a7e}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>5</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

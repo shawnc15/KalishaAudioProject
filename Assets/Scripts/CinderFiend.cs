@@ -73,16 +73,18 @@ public class CinderFiend : MonoBehaviour
 
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         boom = true;
         fiendCollider.radius = ExplosionSize;
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Enemy Barks/Cinderfiend Explosion", transform.position);
     }
 
     IEnumerator death()
     {
         yield return new WaitForSeconds(1);
-        player.GetComponent<AudioSource>().clip = player.GetComponent<Move>().death;
-        player.GetComponent<AudioSource>().Play();
+        
+        //player.GetComponent<AudioSource>().clip = player.GetComponent<Move>().death;
+        //player.GetComponent<AudioSource>().Play();
         Destroy(gameObject);
     }
 

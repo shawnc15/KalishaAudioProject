@@ -95,6 +95,7 @@ MonoBehaviour:
   fiendCollider: {fileID: 0}
   ExplosionSize: 2
   boom: 0
+  player: {fileID: 0}
 --- !u!212 &212883080738641222
 SpriteRenderer:
   m_ObjectHideFlags: 1

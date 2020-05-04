@@ -55,6 +55,7 @@ public class Switch : MonoBehaviour {
         //If this is the object's first collision
         if (switchOn == false)
         {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Level SFX/Button", transform.position);
             ToggleEnable();
         }
     }

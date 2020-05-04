@@ -108,8 +108,9 @@ public class Move: MonoBehaviour {
         {
             if (!dying)
             {
-                GetComponent<AudioSource>().clip = death;
-                GetComponent<AudioSource>().Play();
+                //GetComponent<AudioSource>().clip = death;
+                //GetComponent<AudioSource>().Play();
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Level SFX/Player Death", transform.position);
                 dying = true;
                 GetComponent<Transform>().transform.Translate(new Vector3(0.0f, 0.0f, -100.0f));
             }

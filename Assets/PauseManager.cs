@@ -11,7 +11,7 @@ public class PauseManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
         gameObjects = FindObjectsOfType<GameObject>();
         isPaused = false;
         foreach (var item in gameObjects)
@@ -25,11 +25,12 @@ public class PauseManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.P) && !isPaused)
+        if (Input.GetKeyDown(KeyCode.P) && !isPaused)
         {
+            GetComponent<FMODUnity.StudioEventEmitter>().SetParameter("Music Volume",0.8f);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Pause", transform.position);
             Pause();
         }
-
     }
 
     public void Pause()
@@ -69,6 +70,7 @@ public class PauseManager : MonoBehaviour {
         {
             item.SetActive(false);
         }
+        GetComponent<FMODUnity.StudioEventEmitter>().SetParameter("Music Volume", 1f);
         isPaused = false;
     }
 
@@ -78,6 +80,15 @@ public class PauseManager : MonoBehaviour {
     }
     public void ReturnToMenu()
     {
+        isPaused = false;
+        foreach (var item in gameObjects)
+        {
+            if (item.tag == "pause")
+            {
+                item.SetActive(false);
+            }
+        }
+        GetComponent<FMODUnity.StudioEventEmitter>().Stop();
         SceneManager.LoadScene("Title");
     }
 

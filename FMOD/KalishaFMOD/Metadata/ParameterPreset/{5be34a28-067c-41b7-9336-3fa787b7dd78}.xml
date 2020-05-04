@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{5be34a28-067c-41b7-9336-3fa787b7dd78}">
+		<property name="name">
+			<value>Docks Progress</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5297762e-651b-445a-9d25-11d6828c2c53}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{ef698775-0395-49da-a3a7-429700cd9f5c}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{ef698775-0395-49da-a3a7-429700cd9f5c}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>5</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

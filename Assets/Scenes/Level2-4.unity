@@ -2733,6 +2733,8 @@ GameObject:
   - component: {fileID: 357088825}
   - component: {fileID: 357088824}
   - component: {fileID: 357088823}
+  - component: {fileID: 357088830}
+  - component: {fileID: 357088829}
   m_Layer: 0
   m_Name: HorrorHound (1)
   m_TagString: hound
@@ -2887,6 +2889,53 @@ Transform:
   m_Father: {fileID: 973783619}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &357088829
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 357088822}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0025174022, y: -0.010069966}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.2276, y: 0.2184}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.33333337, y: 0.33923793}
+  m_EdgeRadius: 0
+--- !u!114 &357088830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 357088822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: player
+  Event: event:/Enemy Barks/Horrorhound Bark
+  PlayEvent: 5
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!4 &358537726 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4748779625552218, guid: eb04fb5dd88b0294f83df9bcb4fed424,
@@ -4339,6 +4388,53 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4be872458ad234648b6a7de8d84ab0b4, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &653701984
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4449163226111408, guid: 4383e08e0b0f0ff498fe83f6da70bf60, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 7.1668053
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449163226111408, guid: 4383e08e0b0f0ff498fe83f6da70bf60, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -6.548032
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449163226111408, guid: 4383e08e0b0f0ff498fe83f6da70bf60, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 102.98047
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449163226111408, guid: 4383e08e0b0f0ff498fe83f6da70bf60, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449163226111408, guid: 4383e08e0b0f0ff498fe83f6da70bf60, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449163226111408, guid: 4383e08e0b0f0ff498fe83f6da70bf60, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449163226111408, guid: 4383e08e0b0f0ff498fe83f6da70bf60, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449163226111408, guid: 4383e08e0b0f0ff498fe83f6da70bf60, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114613715733687410, guid: 4383e08e0b0f0ff498fe83f6da70bf60,
+        type: 2}
+      propertyPath: Params.Array.data[0].Value
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4383e08e0b0f0ff498fe83f6da70bf60, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!4 &655407485 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4748779625552218, guid: eb04fb5dd88b0294f83df9bcb4fed424,
@@ -4533,6 +4629,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114280915959087522, guid: a0831e3f8dbe77442b01f4645881a698,
+        type: 2}
+      propertyPath: Params.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4474616317153718, guid: a0831e3f8dbe77442b01f4645881a698, type: 2}
       propertyPath: m_LocalPosition.x
       value: -6.07
@@ -4568,6 +4669,11 @@ Prefab:
     - target: {fileID: 212029164549433022, guid: a0831e3f8dbe77442b01f4645881a698,
         type: 2}
       propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114280915959087522, guid: a0831e3f8dbe77442b01f4645881a698,
+        type: 2}
+      propertyPath: Params.Array.data[1].Value
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4643,6 +4749,58 @@ Prefab:
     - {fileID: 61991248771253792, guid: eb04fb5dd88b0294f83df9bcb4fed424, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: eb04fb5dd88b0294f83df9bcb4fed424, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &689657561
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224351102410514946, guid: 0467c74e029d12a44938f3088bd26a61,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134453721961582, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 7.9924564
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134453721961582, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.2224228
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134453721961582, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.021028563
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134453721961582, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134453721961582, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134453721961582, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134453721961582, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134453721961582, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 223667540093886044, guid: 0467c74e029d12a44938f3088bd26a61,
+        type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 898973419}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0467c74e029d12a44938f3088bd26a61, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!4 &691968456 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4748779625552218, guid: eb04fb5dd88b0294f83df9bcb4fed424,
@@ -4686,7 +4844,7 @@ Transform:
   - {fileID: 664162420}
   - {fileID: 1174142973}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &724094944
 GameObject:
@@ -4797,7 +4955,7 @@ Transform:
   - {fileID: 233614104}
   - {fileID: 1117760245}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &726623792 stripped
 Transform:
@@ -4839,7 +4997,7 @@ Transform:
   - {fileID: 867643054}
   - {fileID: 1758919370}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &737171862 stripped
 Transform:
@@ -5554,7 +5712,7 @@ Transform:
   - {fileID: 167296141}
   - {fileID: 973608467}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &823466072
 GameObject:
@@ -6918,7 +7076,7 @@ Transform:
   - {fileID: 1660492554}
   - {fileID: 2031434118}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &976046087
 GameObject:
@@ -7567,6 +7725,8 @@ GameObject:
   - component: {fileID: 1070346494}
   - component: {fileID: 1070346493}
   - component: {fileID: 1070346492}
+  - component: {fileID: 1070346499}
+  - component: {fileID: 1070346498}
   m_Layer: 0
   m_Name: HorrorHound (2)
   m_TagString: hound
@@ -7737,6 +7897,53 @@ Transform:
   m_Father: {fileID: 1300889735}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1070346498
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1070346491}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0025174618, y: -0.002517581}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.2276, y: 0.2184}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.3232634, y: 0.3140633}
+  m_EdgeRadius: 0
+--- !u!114 &1070346499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1070346491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: player
+  Event: event:/Enemy Barks/Horrorhound Bark
+  PlayEvent: 5
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1076865760
 GameObject:
   m_ObjectHideFlags: 0
@@ -8304,6 +8511,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114280915959087522, guid: a0831e3f8dbe77442b01f4645881a698,
+        type: 2}
+      propertyPath: Params.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4474616317153718, guid: a0831e3f8dbe77442b01f4645881a698, type: 2}
       propertyPath: m_LocalPosition.x
       value: -1.5
@@ -8343,6 +8555,11 @@ Prefab:
     - target: {fileID: 212029164549433022, guid: a0831e3f8dbe77442b01f4645881a698,
         type: 2}
       propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114280915959087522, guid: a0831e3f8dbe77442b01f4645881a698,
+        type: 2}
+      propertyPath: Params.Array.data[1].Value
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9215,6 +9432,8 @@ GameObject:
   - component: {fileID: 1256866295}
   - component: {fileID: 1256866294}
   - component: {fileID: 1256866293}
+  - component: {fileID: 1256866300}
+  - component: {fileID: 1256866299}
   m_Layer: 0
   m_Name: HorrorHound
   m_TagString: hound
@@ -9371,6 +9590,53 @@ Transform:
   m_Father: {fileID: 726274847}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1256866299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1256866292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: player
+  Event: event:/Enemy Barks/Horrorhound Bark
+  PlayEvent: 5
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!61 &1256866300
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1256866292}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0050349236, y: -0.0050348043}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.2276, y: 0.2184}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.31822836, y: 0.32916808}
+  m_EdgeRadius: 0
 --- !u!1001 &1259456157
 Prefab:
   m_ObjectHideFlags: 0
@@ -9818,7 +10084,7 @@ Transform:
   - {fileID: 2139829651}
   - {fileID: 102521638}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1301791578
 GameObject:
@@ -10211,7 +10477,7 @@ Transform:
   - {fileID: 1381407952}
   - {fileID: 375512243}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1366113723
 Prefab:
@@ -14756,5 +15022,5 @@ Transform:
   - {fileID: 1450711942}
   - {fileID: 776123538}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
