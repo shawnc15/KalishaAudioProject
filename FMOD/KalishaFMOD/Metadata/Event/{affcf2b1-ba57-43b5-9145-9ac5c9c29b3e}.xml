@@ -58,7 +58,7 @@
 			<destination>{0fe66782-498a-4044-b1b5-3bf87c7bf7c5}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{09224f05-3f9a-40b2-acb6-c20014f3cf26}</destination>
+			<destination>{5b5c364e-a01c-40f8-a637-2edf17ca8c00}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{fe909881-274a-433d-a4da-871fdda25515}" />
@@ -242,6 +242,7 @@
 	<object class="MixerBusEffectChain" id="{633c8d2c-95ce-4a69-aa57-3327385ea604}">
 		<relationship name="effects">
 			<destination>{d031fee2-37b9-43f8-8f22-01b2df1cdaf0}</destination>
+			<destination>{a56bb8d5-fad7-4f0c-85ef-217070648a2e}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{f7cf4d8a-352d-48f7-9019-1707aa9b3698}" />
@@ -294,6 +295,7 @@
 	</object>
 	<object class="MixerBusPanner" id="{40de57f6-b5a0-4675-9ddb-52c8fd805681}" />
 	<object class="MixerBusFader" id="{d031fee2-37b9-43f8-8f22-01b2df1cdaf0}" />
+	<object class="LoudnessMeter" id="{a56bb8d5-fad7-4f0c-85ef-217070648a2e}" />
 	<object class="AutomationCurve" id="{fc3e4e9d-043c-43bf-85bb-098217de8816}">
 		<relationship name="parameter">
 			<destination>{ef698775-0395-49da-a3a7-429700cd9f5c}</destination>
