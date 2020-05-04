@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114677803037835976}
-  - {fileID: 114784294641347920}
+  - {fileID: 114761526272092192}
   EditorEvents:
   - {fileID: 114549922495824512}
   - {fileID: 114389474424368044}
@@ -33,10 +33,10 @@ MonoBehaviour:
   - {fileID: 114938299601209494}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 114784294641347920}
+  - {fileID: 114761526272092192}
   StringsBanks:
   - {fileID: 114677803037835976}
-  stringsBankWriteTime: 637241417952285469
+  stringsBankWriteTime: 637241431804973190
   cacheVersion: 3
 --- !u!114 &114001618310528988
 MonoBehaviour:
@@ -135,6 +135,23 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+  Exists: 0
+--- !u!114 &114033503116492850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/KalishaFMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241431346574941
+  LoadResult: 0
+  FileSizes: []
   Exists: 0
 --- !u!114 &114034485829377664
 MonoBehaviour:
@@ -300,12 +317,12 @@ MonoBehaviour:
   Path: event:/Level SFX/Collect Shard
   guid: 8c0e51f92ba73f488bada20ec6678503
   Banks:
-  - {fileID: 114784294641347920}
+  - {fileID: 114761526272092192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114867010484489274}
+  - {fileID: 114753302297610258}
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
@@ -453,6 +470,22 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114120463422854184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Collect Shard/Collection Progress
+  m_EditorClassIdentifier: 
+  Name: Collection Progress
+  Min: 0
+  Max: 6
+  Default: 0
+  Exists: 0
 --- !u!114 &114132822833308818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -532,7 +565,7 @@ MonoBehaviour:
   Path: event:/Enemy Barks/Dreadtalon Cry
   guid: 75989e70dd02904e8b12c31b5ee84738
   Banks:
-  - {fileID: 114784294641347920}
+  - {fileID: 114761526272092192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -541,6 +574,22 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 877
 --- !u!114 &114152124826529050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Collect Shard/Collection Progress
+  m_EditorClassIdentifier: 
+  Name: Collection Progress
+  Min: 0
+  Max: 6
+  Default: 0
+  Exists: 0
+--- !u!114 &114153122660703694
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -587,7 +636,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &114181264180994794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -734,6 +783,22 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &114206266714721028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Desert Ambience/Desert Progress
+  m_EditorClassIdentifier: 
+  Name: Desert Progress
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
 --- !u!114 &114219297402129532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -762,6 +827,22 @@ MonoBehaviour:
   m_Name: parameter:/TitleTheme/Music Volume
   m_EditorClassIdentifier: 
   Name: Music Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114222773118169248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Push Crate (Sand)/Desert
+  m_EditorClassIdentifier: 
+  Name: Desert
   Min: 0
   Max: 1
   Default: 0
@@ -797,7 +878,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &114227171953992508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -929,7 +1010,7 @@ MonoBehaviour:
   Path: event:/UI/Pause
   guid: 2ea51c380d9d894b9f031da9eb6bbadc
   Banks:
-  - {fileID: 114784294641347920}
+  - {fileID: 114761526272092192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -967,7 +1048,7 @@ MonoBehaviour:
   Path: event:/Enemy Barks/Cinderfiend Explosion
   guid: 716eeba10748fe459e8cbc69868c7d1c
   Banks:
-  - {fileID: 114784294641347920}
+  - {fileID: 114761526272092192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1153,6 +1234,22 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114335199456628892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TitleTheme/Music Volume
+  m_EditorClassIdentifier: 
+  Name: Music Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114338842270010926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1313,12 +1410,12 @@ MonoBehaviour:
   Path: event:/Ambience/Desert Ambience
   guid: 7867ae05d6484740b2f0e7f5ba41949e
   Banks:
-  - {fileID: 114784294641347920}
+  - {fileID: 114761526272092192}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114879222519203398}
+  - {fileID: 114986380681077914}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -1433,15 +1530,31 @@ MonoBehaviour:
   Path: event:/Music/LevelTheme
   guid: 7a503ffe233656489d7040d85ec15fc8
   Banks:
-  - {fileID: 114784294641347920}
+  - {fileID: 114761526272092192}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114751845052422950}
+  - {fileID: 114742706342052896}
   MinDistance: 0
   MaxDistance: 0
   Length: 34285
+--- !u!114 &114408992222692100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ocean Ambience/Docks Progress
+  m_EditorClassIdentifier: 
+  Name: Docks Progress
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
 --- !u!114 &114420272375919528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1554,6 +1667,22 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114450427578651166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Desert Ambience/Desert Progress
+  m_EditorClassIdentifier: 
+  Name: Desert Progress
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
 --- !u!114 &114450747674500392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1617,12 +1746,12 @@ MonoBehaviour:
   Path: event:/Level SFX/Push Crate (Sand)
   guid: 5c05b20d536ca849ae29ba139ddacac8
   Banks:
-  - {fileID: 114784294641347920}
+  - {fileID: 114761526272092192}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114180227928384876}
+  - {fileID: 114934285619315998}
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
@@ -1929,12 +2058,12 @@ MonoBehaviour:
   Path: event:/Music/TitleTheme
   guid: 60761aafe7627a4db56ecf96e4d0e4c6
   Banks:
-  - {fileID: 114784294641347920}
+  - {fileID: 114761526272092192}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114225913488464874}
+  - {fileID: 114880080460805134}
   MinDistance: 0
   MaxDistance: 0
   Length: 30000
@@ -2002,6 +2131,22 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &114558583047992020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ocean Ambience/Docks Progress
+  m_EditorClassIdentifier: 
+  Name: Docks Progress
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
 --- !u!114 &114559937810737270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2099,7 +2244,7 @@ MonoBehaviour:
   Min: 0
   Max: 5
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &114585395242471516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2195,7 +2340,7 @@ MonoBehaviour:
   Path: event:/Level SFX/Portal Unlock
   guid: f908548deaa75e4fa7527640651682ad
   Banks:
-  - {fileID: 114784294641347920}
+  - {fileID: 114761526272092192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2349,6 +2494,22 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &114652872783651516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelTheme/Music Volume
+  m_EditorClassIdentifier: 
+  Name: Music Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114669986301674584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2379,7 +2540,7 @@ MonoBehaviour:
   Path: event:/UI/Menu Interaction (Click)
   guid: 403d08425b1c68478d0cefb23bb6675e
   Banks:
-  - {fileID: 114784294641347920}
+  - {fileID: 114761526272092192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2400,7 +2561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD/KalishaFMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637241417952285469
+  lastModified: 637241431804973190
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -2469,7 +2630,7 @@ MonoBehaviour:
   Path: event:/Enemy Barks/Brinehood Shoot
   guid: 0356a43020dd8d48be38d7e7ac792334
   Banks:
-  - {fileID: 114784294641347920}
+  - {fileID: 114761526272092192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2493,6 +2654,22 @@ MonoBehaviour:
   lastModified: 637241234498591223
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &114707464818345426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelTheme/Music Volume
+  m_EditorClassIdentifier: 
+  Name: Music Volume
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 0
 --- !u!114 &114720420843367050
 MonoBehaviour:
@@ -2526,7 +2703,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &114751845052422950
+--- !u!114 &114742706342052896
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2542,6 +2719,22 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &114751845052422950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelTheme/Music Volume
+  m_EditorClassIdentifier: 
+  Name: Music Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114752861551085746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2558,6 +2751,22 @@ MonoBehaviour:
   Max: 5
   Default: 0
   Exists: 0
+--- !u!114 &114753302297610258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Collect Shard/Collection Progress
+  m_EditorClassIdentifier: 
+  Name: Collection Progress
+  Min: 0
+  Max: 6
+  Default: 0
+  Exists: 1
 --- !u!114 &114760998523201022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2574,6 +2783,23 @@ MonoBehaviour:
   Max: 5
   Default: 0
   Exists: 0
+--- !u!114 &114761526272092192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/KalishaFMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241431804913358
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &114763785117455934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2604,6 +2830,22 @@ MonoBehaviour:
   Name: Docks Progress
   Min: 0
   Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &114771070124736310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Push Crate (Sand)/Desert
+  m_EditorClassIdentifier: 
+  Name: Desert
+  Min: 0
+  Max: 1
   Default: 0
   Exists: 0
 --- !u!114 &114772910151664874
@@ -2671,7 +2913,7 @@ MonoBehaviour:
   lastModified: 637241417952215658
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &114788260569973428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2816,12 +3058,12 @@ MonoBehaviour:
   Path: event:/Ambience/Ocean Ambience
   guid: b1f2fcaf57bab54391459ac5c9c29b3e
   Banks:
-  - {fileID: 114784294641347920}
+  - {fileID: 114761526272092192}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114574097650199178}
+  - {fileID: 114981010741023988}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -2952,7 +3194,23 @@ MonoBehaviour:
   Min: 0
   Max: 6
   Default: 0
-  Exists: 1
+  Exists: 0
+--- !u!114 &114875983042391274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TitleTheme/Music Volume
+  m_EditorClassIdentifier: 
+  Name: Music Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114879075839802472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2983,6 +3241,22 @@ MonoBehaviour:
   Name: Desert Progress
   Min: 0
   Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &114880080460805134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TitleTheme/Music Volume
+  m_EditorClassIdentifier: 
+  Name: Music Volume
+  Min: 0
+  Max: 1
   Default: 0
   Exists: 1
 --- !u!114 &114881944148983292
@@ -3166,6 +3440,22 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114934285619315998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Push Crate (Sand)/Desert
+  m_EditorClassIdentifier: 
+  Name: Desert
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &114938299601209494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3180,7 +3470,7 @@ MonoBehaviour:
   Path: event:/Enemy Barks/Horrorhound Bark
   guid: 96dba8c5c7331f4baf6f5ee921c03fff
   Banks:
-  - {fileID: 114784294641347920}
+  - {fileID: 114761526272092192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3234,7 +3524,7 @@ MonoBehaviour:
   Path: event:/Level SFX/Button
   guid: 4ff6075b00b2a540949be84fee4fb860
   Banks:
-  - {fileID: 114784294641347920}
+  - {fileID: 114761526272092192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3289,7 +3579,7 @@ MonoBehaviour:
   Path: event:/Level SFX/Player Death
   guid: b8eb28dc08695f4bac9b956063a6204f
   Banks:
-  - {fileID: 114784294641347920}
+  - {fileID: 114761526272092192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3376,7 +3666,7 @@ MonoBehaviour:
   Path: event:/UI/Menu Interaction (Hover)
   guid: b88f1b8189378847ace67c262133e569
   Banks:
-  - {fileID: 114784294641347920}
+  - {fileID: 114761526272092192}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3415,4 +3705,53 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+  Exists: 0
+--- !u!114 &114981010741023988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ocean Ambience/Docks Progress
+  m_EditorClassIdentifier: 
+  Name: Docks Progress
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 1
+--- !u!114 &114986380681077914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Desert Ambience/Desert Progress
+  m_EditorClassIdentifier: 
+  Name: Desert Progress
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 1
+--- !u!114 &114987128629541484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/KalishaFMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241431545408797
+  LoadResult: 0
+  FileSizes: []
   Exists: 0

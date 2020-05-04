@@ -161,6 +161,18 @@
 		<property name="volume">
 			<value>3</value>
 		</property>
+		<property name="minimumTimeBetweenSounds">
+			<value>1000</value>
+		</property>
+		<property name="maximumTimeBetweenSounds">
+			<value>3000</value>
+		</property>
+		<property name="minimumScatterDistance">
+			<value>0</value>
+		</property>
+		<property name="maximumScatterDistance">
+			<value>0</value>
+		</property>
 		<property name="pitchRandomization">
 			<value>0.99999994</value>
 		</property>
